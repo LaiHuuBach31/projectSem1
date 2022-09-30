@@ -1,0 +1,49 @@
+.banner{
+    color: #fff;
+    background-image: url('https://cdn.shopify.com/s/files/1/0414/0069/6999/files/slideshow-v1-2.jpg?v=1593074379');
+    padding: 100px 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.banner h1{
+    border-bottom: 3px solid #fff;
+    display: inline-block;
+}
+.author img{
+    border-radius: 50%;
+}
+.blog{
+    background-color: #9999981b;
+    padding: 15px;
+    margin: 20px 0px;
+}
+.blog1, .title_{
+    margin: 20px 0px;
+}
+.title_{
+    position: relative;
+}
+.title_::after{
+    position: absolute;
+    width: 100px;
+    height: 5px;
+    background-color: #ea8025;
+    content: '';
+    top: 50%;
+} 
+.number_one:first-child{
+    background-color: #ea8025;
+    color: #fff;
+}
+.number_one {
+    border: 4px solid #ea8025;
+    padding: 4px 10px;
+    color: #ea8025;
+    margin: 0px 5px;
+}
+@media screen and (max-width:426px){
+    .banner{
+        padding: 40px 0px;
+    }
+}

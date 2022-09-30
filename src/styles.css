@@ -1,0 +1,24 @@
+.product_demo .owl-prev, .product_demo  .owl-next{
+    color: black !important;
+    background-color: aliceblue !important;
+    font-weight: 700 !important;
+    padding: 10px 15px !important;
+    box-shadow: 5px 7px #888888;
+}
+.product_demo:hover .owl-prev, .product_demo:hover .owl-next{
+    background-color: #ea8025 !important;
+    color: #fff !important;
+    
+}
+.owl_home .owl-prev, .owl_home .owl-next{
+    color: black !important;
+    background-color: aliceblue !important;
+    font-weight: 700 !important;
+    padding: 10px 15px !important;
+    box-shadow: 5px 7px #888888;
+}
+.owl_home:hover .owl-prev, .owl_home:hover .owl-next{
+    background-color: #ea8025 !important;
+    color: #fff !important;
+    
+}

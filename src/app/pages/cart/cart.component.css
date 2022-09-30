@@ -1,0 +1,81 @@
+.banner{
+    color: #fff;
+    background-image: url('https://cdn.shopify.com/s/files/1/0301/5648/8842/files/breadcrumb.jpg?v=1579081409');
+    padding: 100px 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.banner h1{
+    border-bottom: 3px solid #fff;
+    display: inline-block;
+}
+.title_top{
+    border: 1px solid rgba(70, 61, 61, 0.856);
+}
+.title_tops {
+    border: 1px solid rgba(70, 61, 61, 0.856);   
+}
+.title_top h4{
+    border: 1px solid rgba(70, 61, 61, 0.856);
+    margin: 0;
+}
+.list_products{
+    border-top: none;
+}
+.title_tops input {
+    width: 70px;
+    height: 50px;
+}
+.amount{
+    display: flex;
+    align-items: center;
+}
+.amount input{
+    padding: 0;
+}
+.update button{
+    background-color: #111;
+    color: #fff;
+    padding: 10px 0px;
+    width: 70%;
+    font-weight: 700;
+    border: none;
+}
+.continue button{
+    background-color: #ea8025;
+    color: #fff;
+    padding: 10px 0px;
+    width: 70%;
+    font-weight: 700;
+    border: none; 
+}
+.continue{
+    text-align: right;
+}
+.cart_total h5{
+    border-bottom: 1px solid #111;
+    padding-bottom: 10px;
+}
+.proceed button{
+    background-color: #ea8025;
+    color: #fff;
+    padding: 10px 0px;
+    width: 100%;
+    font-weight: 700;
+    border: none; 
+}
+.end_cart{
+    border: 1px solid #111;
+    padding: 30px;
+}
+@media screen and (max-width:1024px){
+    .banner{
+        padding: 40px 0px;
+    }
+}
+@media screen and (max-width:768px){
+    *{
+        font-size: 10px;
+    }
+}

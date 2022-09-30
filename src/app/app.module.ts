@@ -1,0 +1,52 @@
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { LayoutComponent } from './layout/layout.component';
+import { PagesComponent } from './pages/pages.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HeaderComponent } from './layout/header/header.component';
+import { FooterComponent } from './layout/footer/footer.component';
+import { HomeComponent } from './pages/home/home.component';
+import { RouterModule } from '@angular/router';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { Router } from '@angular/router';
+import { BlogComponent } from './pages/blog/blog.component';
+import { DetailComponent } from './pages/detail/detail.component';
+import { CartComponent } from './pages/cart/cart.component';
+import { ShopComponent } from './pages/shop/shop.component';
+import { AboutComponent } from './pages/about/about.component';
+import { ContactComponent } from './pages/contact/contact.component';
+
+
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    LayoutComponent,
+    HeaderComponent,
+    FooterComponent,
+    PagesComponent,
+    HomeComponent,
+    BlogComponent,
+    DetailComponent,
+    CartComponent,
+    ShopComponent,
+    AboutComponent,
+    ContactComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    RouterModule,
+    BrowserAnimationsModule,
+    CarouselModule,
+    ReactiveFormsModule,
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }

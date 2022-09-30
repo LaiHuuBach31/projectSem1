@@ -1,0 +1,591 @@
+/* * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+} */
+
+.container_custom {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+header {
+    background-color: #ea8025;
+    padding: 30px 30px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.header .menu ul {
+    margin: 0;
+}
+
+.header .menu ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 15px 15px;
+}
+
+.header .menu ul li:hover a {
+    color: #d6d6d6;
+    transition: 0.5s;
+}
+
+.header .menu ul li a {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.menu {
+    width: 40%;
+}
+
+.menu_lv2_food {
+    position: relative;
+    z-index: 10000;
+}
+
+.menu_lv2_food:hover .menu_FoodLv2 {
+    display: block;
+    /* transition: all 1s ease-in-out; */
+}
+
+.menu_FoodLv2 {
+    background-image: url('https://cdn.shopify.com/s/files/1/0301/5648/8842/files/menu.jpg?v=1579147989');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 30px 20px 30px 30px;
+    border-radius: 5px;
+    visibility: visible;
+    width: 450px;
+    display: none;
+}
+
+.menu_FoodLv2 {
+    position: absolute;
+    top: 55px;
+    right: -280px;
+}
+
+.menu_food p {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.menu_food p:after {
+    content: "";
+    position: absolute;
+    height: 1.75px;
+    background-color: #fff;
+    width: 25%;
+    bottom: 0;
+    left: 14px;
+}
+
+.category_food p {
+    color: #fff;
+    line-height: 12px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.category_food p:hover {
+    color: #d6d6d6;
+}
+
+.menu_combo {
+    position: relative;
+    cursor: pointer;
+}
+
+.menu_combo p {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.menu_combo p:after {
+    content: "";
+    position: absolute;
+    height: 1.75px;
+    background-color: #fff;
+    width: 11%;
+    bottom: -7px;
+    left: 1px;
+}
+
+.menu_combo i {
+    color: #ec7819;
+    position: absolute;
+    top: -5px;
+    left: 50px;
+}
+
+.menu_lv2_about {
+    position: relative;
+}
+
+.menu_lv2_about:hover .menu_AboutLv2 {
+    display: block;
+}
+
+.menu_AboutLv2 {
+    background-image: url('https://cdn.shopify.com/s/files/1/0301/5648/8842/files/menu.jpg?v=1579147989');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 25px 20px 15px 30px;
+    border-radius: 5px;
+    visibility: visible;
+    display: none;
+    width: 130px;
+    position: absolute;
+    top: 55px;
+    z-index: 10000;
+}
+
+.menu_AboutLv2 p {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.menu_AboutLv2 p:hover {
+    color: #d6d6d6;
+}
+
+/* logo*/
+.logo {
+    width: 20%;
+    cursor: pointer;
+}
+
+.player-tile__number {
+    /* padding-top: 60px;
+    left: 25px; */
+    font-family: Gotham Narrow, GothamNarrow, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+    letter-spacing: normal;
+    font-weight: 700;
+    font-size: 43px;
+    line-height: 1;
+}
+
+.player-tile__number {
+    margin: 0;
+    color: #fff;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #fff;
+}
+
+.player-tile__number p {
+    margin: 0;
+}
+
+.menu_right {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+.menu_right a {
+    color: #fff;
+    font-size: 24px;
+    transition: .3s;
+    margin: 0 15px;
+}
+
+.menu_right a:hover {
+    box-shadow: 0 .7em .5em -.4em currentColor;
+    transform: translateY(-0.25em);
+    color: #fff;
+}
+
+/*1024px*/
+.container_custom_1024 {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.header_1024 {
+    background-color: #ea8025;
+    padding: 20px 20px;
+    display: none;
+}
+
+.header_content_1024 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bars i {
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.logo_1024 {
+    cursor: pointer;
+}
+
+.player-tile__number_1024 {
+    /* padding-top: 60px;
+    left: 25px; */
+    font-family: Gotham Narrow, GothamNarrow, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+    letter-spacing: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 1;
+    margin: 0;
+    color: #fff;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #fff;
+}
+
+.player-tile__number_1024 p {
+    margin: 0;
+}
+
+.menu_right_1024 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+.menu_right_1024 a {
+    color: #fff;
+    font-size: 24px;
+    transition: .3s;
+    margin: 0 15px;
+}
+
+.menu_right_1024 a:hover {
+    box-shadow: 0 .7em .5em -.4em currentColor;
+    transform: translateY(-0.25em);
+    color: #fff;
+}
+
+/*nav-on*/
+.bg-1024 {
+    background-color: #000000c4;
+    z-index: 4;
+    top: 0px;
+    left: 0;
+    position: fixed;
+    overflow: auto;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    visibility: visible;
+    width: 0;
+}
+
+.box_contentmenu {
+    z-index: 5;
+    top: 0px;
+    left: 0;
+    position: fixed;
+    overflow: auto;
+    /* width: 100vw; */
+    height: 100vh;
+    opacity: 0;
+    transition: all .6s ease;
+    /* visibility: visible; */
+    width: 0;
+}
+
+.nav-main-1024 {
+    width: 40%;
+    z-index: 10;
+    height: 100%;
+    background-color: white;
+}
+
+.nav-1024 {
+    background-color: #ea8025;
+    padding: 15px 20px;
+    border-bottom: 3px solid #ccc;
+    z-index: 15;
+}
+
+.nav-header-1024 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-header-1024 .account a {
+    color: #fff;
+    font-size: 18px;
+}
+
+.nav-header-1024 .account span {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 2px;
+    padding: 0 10px;
+}
+
+.nav-header-1024 .close_1024 {
+    display: flex;
+    align-items: center;
+}
+
+.nav-header-1024 .close_1024 i {
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.nav-header-1024 .close_1024 span {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: normal;
+    padding: 0 20px;
+}
+
+.menu_1024 {
+    width: 100%;
+    position: relative;
+    height: calc(100% - 120px);
+    overflow: auto;
+}
+
+.menu_content a {
+    color: #000;
+    font-size: 20px;
+    padding: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+}
+
+.menu_1024_multi {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu_1024_multi i {
+    font-size: 20px;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.logout {
+    background-color: #1f1f31;
+    color: #fff;
+    z-index: 20;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.logout span {
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+
+.menuFood_1024 {
+    display: none;
+}
+
+.food_1024 {
+    padding: 0 20px;
+}
+
+.food_1024 h5 {
+    font-size: 17px;
+    letter-spacing: .2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #424242;
+    position: relative;
+    padding-bottom: 7px;
+    cursor: pointer;
+}
+
+.food_1024 h5:hover {
+    color: #ea8025;
+}
+
+.food_1024 h5::after {
+    content: "";
+    position: absolute;
+    height: 1.75px;
+    background-color: #ea8025;
+    width: 17%;
+    bottom: 0;
+    left: 0;
+}
+
+.food_1024 p {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 7px;
+    cursor: pointer;
+}
+
+.combo_1024 {
+    padding: 0 20px;
+    position: relative;
+}
+
+.combo_1024 h5 {
+    font-size: 18px;
+    letter-spacing: .2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #424242;
+    font-family: 'Courier New', Courier, monospace;
+    padding-bottom: 4px;
+    cursor: pointer;
+}
+
+.combo_1024 h5:hover {
+    color: #ea8025;
+}
+
+.combo_1024 i {
+    position: absolute;
+    top: 0;
+    left: 87px;
+    font-size: 16px;
+    color: #dd3333;
+}
+
+.combo_1024 h5::after {
+    content: "";
+    position: absolute;
+    height: 1.75px;
+    background-color: #ea8025;
+    width: 17%;
+    bottom: 0;
+    left: 20px;
+}
+
+.about_1024 {
+    display: none;
+}
+
+.onNav {
+    opacity: 1;
+    width: 100vw;
+}
+
+.change-icon {
+    transform: rotate(90deg);
+    transition: 0.5s;
+}
+
+.display_block {
+    display: block;
+}
+
+@media screen and (max-width:1024px) {
+    .header_main {
+        display: none;
+    }
+
+    .header_1024 {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width:426px) {
+    .menu_right_1024 {
+        margin-right: 0;
+    }
+
+    .player-tile__number_1024 {
+        /* padding-top: 60px;
+        left: 25px; */
+        font-family: Gotham Narrow, GothamNarrow, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+        letter-spacing: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 1;
+        margin: 0;
+        color: #fff;
+        -webkit-text-fill-color: rgba(0, 0, 0, 0);
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #fff;
+    }
+
+    .menu_right_1024 a {
+        color: #fff;
+        font-size: 20px;
+        transition: .3s;
+        margin: 0 7px;
+    }
+
+    .nav-main-1024 {
+        width: 70%;
+        z-index: 10;
+        height: 100%;
+        background-color: white;
+    }
+}
+
+@media screen and (max-width:376px) {
+    .account span {
+        display: none;
+    }
+
+    .menu_content a {
+        color: #000;
+        font-size: 18px;
+        padding: 15px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .player-tile__number_1024 {
+        /* padding-top: 60px;
+        left: 25px; */
+        font-family: Gotham Narrow, GothamNarrow, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+        letter-spacing: normal;
+        font-weight: 700;
+        font-size: 27px;
+        line-height: 1;
+        margin: 0;
+        color: #fff;
+        -webkit-text-fill-color: rgba(0, 0, 0, 0);
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #fff;
+    }
+}
