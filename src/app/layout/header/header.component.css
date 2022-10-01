@@ -50,9 +50,17 @@ header {
     width: 40%;
 }
 
+.menu ul li {
+    font-family: 'Courier New', Courier, monospace;
+}
+
 .menu_lv2_food {
     position: relative;
     z-index: 10000;
+}
+
+.menu_food {
+    position: relative;
 }
 
 .menu_lv2_food:hover .menu_FoodLv2 {
@@ -74,7 +82,7 @@ header {
 
 .menu_FoodLv2 {
     position: absolute;
-    top: 55px;
+    top: 50px;
     right: -280px;
 }
 

@@ -8,7 +8,7 @@
     background-image: url('http://www.nicdarkthemes.com/themes/restaurant/wp/demo/italian-food/wp-content/uploads/sites/4/2019/02/paral-01.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 50px;
+    padding: 60px;
 }
 
 .title_shop {
@@ -325,6 +325,10 @@
     color: #fc3;
 }
 
+.padding_010 {
+    padding: 0 10px;
+}
+
 /*product*/
 .around_item {
     padding: 0 15px;
@@ -540,6 +544,10 @@
 @media screen and (max-width:576px) {
     .star {
         font-size: 17px !important;
+    }
+
+    .title_shop h2 {
+        font-size: 45px;
     }
 
     .item_info {
