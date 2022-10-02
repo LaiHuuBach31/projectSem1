@@ -90,6 +90,7 @@ header {
     color: white;
     font-size: 18px;
     font-weight: 600;
+    text-transform: uppercase;
 }
 
 .menu_food p:after {
@@ -123,6 +124,7 @@ header {
     color: white;
     font-size: 18px;
     font-weight: 600;
+    text-transform: uppercase;
 }
 
 .menu_combo p:after {

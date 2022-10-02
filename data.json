@@ -2,15 +2,15 @@
     "category_main": [
         {
             "id": 1,
-            "name": "FOOD"
+            "name": "Food"
         },
         {
             "id": 2,
-            "name": "BEVERAGE"
+            "name": "Beverage"
         },
         {
             "id": 3,
-            "name": "COMBO"
+            "name": "Combo"
         }
     ],
     "category_food": [
@@ -56,5 +56,36 @@
             "id": 2.4,
             "name": "Tea"
         }
+    ],
+    "product": [
+        {
+            "id": 1,
+            "name": "",
+            "description": "",
+            "price": "8.00",
+            "id_category_main": 1,
+            "id_category_food": 1.1,
+            "reviewer": 5,
+            "image": "",
+            "image1": "",
+            "image2": ""
+        }
+    ],
+    "blog": [
+        {
+            "id": 1,
+            "image": "",
+            "name": "",
+            "author": "",
+            "time": "",
+            "content": "",
+            "description": ""
+        }
+    ],
+    "cart": [
+        {}
+    ],
+    "account": [
+        {}
     ]
 }
