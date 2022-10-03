@@ -626,6 +626,10 @@ header {
     position: relative;
 }
 
+.banner img {
+    object-fit: cover;
+}
+
 .content_banner:last-child {
     width: 45%;
 }
