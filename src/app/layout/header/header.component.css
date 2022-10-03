@@ -513,6 +513,7 @@ header {
 .onNav {
     opacity: 1;
     width: 100vw;
+    height: 100%;
 }
 
 .change-icon {
@@ -533,6 +534,15 @@ header {
         display: block;
     }
 
+}
+
+@media screen and (max-width:708px) {
+    .nav-main-1024 {
+        width: 60%;
+        z-index: 10;
+        height: 100%;
+        background-color: white;
+    }
 }
 
 @media screen and (max-width:426px) {
