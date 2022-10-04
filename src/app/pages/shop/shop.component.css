@@ -454,7 +454,19 @@
 .img_best_deal_768 {
     margin: auto;
 }
-
+.number_one:first-child{
+    background-color: #ea8025;
+    color: #fff;
+}
+.number_one {
+    border: 4px solid #ea8025;
+    padding: 4px 10px;
+    color: #ea8025;
+    margin: 0px 5px;
+}
+.next_blog{
+    cursor: pointer;
+}
 @media screen and (max-width:1024px) {
     .around_item {
         padding: 0 10px;

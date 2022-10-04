@@ -234,7 +234,7 @@
                 </div>
                 <div class="col-lg-9">
                     <div class="row">
-                        <div class="col-lg-4 around_item col-md-4 col-sm-6 ">
+                        <div class="col-lg-4 around_item col-md-4 col-sm-6 " *ngFor="let item of product">
                             <div class="favorite">
                                 <i class="fa-solid fa-heart"></i>
                                 <!-- (click)="add_favorite()" -->
@@ -243,116 +243,26 @@
                                 <div class="product_img">
                                     <a routerLink="/detail" class="link_product">
                                         <img class="card-img-top product_image"
-                                            src="https://demo2wpopal.b-cdn.net/poco/wp-content/uploads/2020/08/3-1-600x600.png"
+                                            src="{{item.image}}"
                                             alt="Title">
                                     </a>
                                 </div>
                                 <div class="card-body mt-2">
-                                    <h4 class="card-title">BBQ chicken breast</h4>
-                                    <p class="card-text">A mighty meaty double helping of all the reasons you love our
-                                        burger.</p>
+                                    <h4 class="card-title">{{item.name}}</h4>
+                                    <p class="card-text">{{item.description}}</p>
                                     <div class="price">
-                                        <span>£ 8.00</span>
+                                        <span>£ {{item.price}}</span>
                                         <a href=""><i class="fa-solid fa-basket-shopping"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 around_item col-md-4 col-sm-6 ">
-                            <div class="favorite">
-                                <i class="fa-solid fa-heart"></i>
-                                <!-- (click)="add_favorite()" -->
-                            </div>
-                            <div class="card product">
-                                <div class="product_img">
-                                    <a routerLink="/detail" class="link_product">
-                                        <img class="card-img-top product_image"
-                                            src="https://demo2wpopal.b-cdn.net/poco/wp-content/uploads/2020/08/3-1-600x600.png"
-                                            alt="Title">
-                                    </a>
-                                </div>
-                                <div class="card-body mt-2">
-                                    <h4 class="card-title">BBQ chicken breast</h4>
-                                    <p class="card-text">A mighty meaty double helping of all the reasons you love our
-                                        burger.</p>
-                                    <div class="price">
-                                        <span>£ 8.00</span>
-                                        <a href=""><i class="fa-solid fa-basket-shopping"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 around_item col-md-4 col-sm-6 ">
-                            <div class="favorite">
-                                <i class="fa-solid fa-heart"></i>
-                                <!-- (click)="add_favorite()" -->
-                            </div>
-                            <div class="card product">
-                                <div class="product_img">
-                                    <a routerLink="/detail" class="link_product">
-                                        <img class="card-img-top product_image"
-                                            src="https://demo2wpopal.b-cdn.net/poco/wp-content/uploads/2020/08/3-1-600x600.png"
-                                            alt="Title">
-                                    </a>
-                                </div>
-                                <div class="card-body mt-2">
-                                    <h4 class="card-title">BBQ chicken breast</h4>
-                                    <p class="card-text">A mighty meaty double helping of all the reasons you love our
-                                        burger.</p>
-                                    <div class="price">
-                                        <span>£ 8.00</span>
-                                        <a href=""><i class="fa-solid fa-basket-shopping"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 around_item col-md-4 col-sm-6 ">
-                            <div class="favorite">
-                                <i class="fa-solid fa-heart"></i>
-                                <!-- (click)="add_favorite()" -->
-                            </div>
-                            <div class="card product">
-                                <div class="product_img">
-                                    <a routerLink="/detail" class="link_product">
-                                        <img class="card-img-top product_image"
-                                            src="https://demo2wpopal.b-cdn.net/poco/wp-content/uploads/2020/08/3-1-600x600.png"
-                                            alt="Title">
-                                    </a>
-                                </div>
-                                <div class="card-body mt-2">
-                                    <h4 class="card-title">BBQ chicken breast</h4>
-                                    <p class="card-text">A mighty meaty double helping of all the reasons you love our
-                                        burger.</p>
-                                    <div class="price">
-                                        <span>£ 8.00</span>
-                                        <a href=""><i class="fa-solid fa-basket-shopping"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 around_item col-md-4 col-sm-6 ">
-                            <div class="favorite">
-                                <i class="fa-solid fa-heart"></i>
-                                <!-- (click)="add_favorite()" -->
-                            </div>
-                            <div class="card product">
-                                <div class="product_img">
-                                    <a routerLink="/detail" class="link_product">
-                                        <img class="card-img-top product_image"
-                                            src="https://demo2wpopal.b-cdn.net/poco/wp-content/uploads/2020/08/3-1-600x600.png"
-                                            alt="Title">
-                                    </a>
-                                </div>
-                                <div class="card-body mt-2">
-                                    <h4 class="card-title">BBQ chicken breast</h4>
-                                    <p class="card-text">A mighty meaty double helping of all the reasons you love our
-                                        burger.</p>
-                                    <div class="price">
-                                        <span>£ 8.00</span>
-                                        <a href=""><i class="fa-solid fa-basket-shopping"></i></a>
-                                    </div>
-                                </div>
-                            </div>
+                    </div>
+                    <div class="next_blog mt-3 mb-3">
+                        <div class="number_page d-flex justify-content-center">
+                            <div class="number_one" (click)="PageChange(1)">1</div>
+                            <div class="number_one" (click)="PageChange(2)">2</div>
+                            <div class="number_one" (click)="PageChange(3)">3</div>
                         </div>
                     </div>
                 </div>

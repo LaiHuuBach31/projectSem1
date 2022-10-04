@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductService } from 'src/app/service/product.service';
 
 @Component({
   selector: 'app-shop',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShopComponent implements OnInit {
 
-  constructor() { }
+  product:any;
+
+  constructor(private productService:ProductService) { }
 
   ngOnInit(): void {
+    // duyệt sản phẩm
+    this.productService.getAllProduct().subscribe((data)=>{
+      this.product = data;
+    })
+
+    
   }
 
   check: any = true
@@ -51,5 +60,12 @@ export class ShopComponent implements OnInit {
 
   add_favorite(){
     
+  }
+
+  PageChange(number:any){
+    alert(number)
+      this.productService.getAllProductPage(number).subscribe((data)=>{
+          this.product = data;
+      })
   }
 }

@@ -19,6 +19,7 @@ import { CartComponent } from './pages/cart/cart.component';
 import { ShopComponent } from './pages/shop/shop.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { HttpClientModule } from "@angular/common/http";
 
 
 
@@ -45,6 +46,7 @@ import { ContactComponent } from './pages/contact/contact.component';
     BrowserAnimationsModule,
     CarouselModule,
     ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
