@@ -87,6 +87,14 @@
     margin-top: 30px;
 }
 
+/* product_feature*/
+.container_custom {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
 .evaluate i {
     color: yellow;
 }
@@ -95,9 +103,17 @@
     font-size: 10px;
 }
 
+.title_product_768 h1 {
+    display: none;
+    font-weight: 600;
+    font-size: 40px;
+    font-family: cursive;
+}
+
 .title_product h1 {
     font-weight: 700;
     font-size: 50px;
+    font-family: cursive;
 }
 
 .price_product span {
@@ -118,6 +134,7 @@
     /* right: 0; */
     top: 25%;
     z-index: 1;
+    left: 0;
 }
 
 .specialist::after {
@@ -194,7 +211,31 @@
     }
 }
 
-@media screen and (max-width:769px) {
+@media screen and (max-width:992px) {
+    .title_product h1 {
+        font-weight: 600;
+        font-size: 40px;
+    }
+
+    .description_product span {
+        -webkit-line-clamp: 7;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        overflow: hidden;
+    }
+
+    .more_infor a {
+        border: 4px solid #ea8025;
+        color: #ea8025;
+        padding: 7px 10px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .container_custom {
+        padding: 0 70px;
+    }
+
     .specialist h6 {
         width: 100% !important;
     }
@@ -205,6 +246,27 @@
 
     .content_banner p {
         font-size: 18px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .title_product {
+        display: none;
+    }
+
+    .title_product_768 h1 {
+        display: block;
+        font-weight: 500
+    }
+
+    .frame_item {
+        width: 80%;
+    }
+
+    .more_infor {
+        padding: 16px 0;
+        margin-top: 17px !important;
+        margin-left: 15px;
     }
 }
 
@@ -229,9 +291,14 @@
         top: 30%;
         left: 40%;
     }
+
+    .content-speacialist {
+        left: 0;
+    }
+
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:376px) {
     .content_banner h1 {
         font-size: 30px;
     }
@@ -242,6 +309,14 @@
 
     .text {
         font-size: 18px;
+    }
+
+    .container_custom {
+        padding: 0 30px;
+    }
+
+    .title_home {
+        padding-top: 20px;
     }
 }
 
