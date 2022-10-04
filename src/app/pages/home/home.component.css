@@ -62,6 +62,7 @@
 .name_product:hover {
     color: #ea8025;
     cursor: pointer;
+    transition: .25s;
 }
 
 .content h1,
@@ -200,9 +201,50 @@
 }
 
 
+.image_pro {
+    position: relative;
+}
 
+.image_pro:hover a {
+    opacity: .5;
+    background-color: #fff;
+    transition: .5s;
+}
 
+.favorite {
+    position: absolute;
+    top: 7%;
+    right: 7%;
+    opacity: 0;
+    background-color: #fff;
+    width: 43px;
+    height: 43px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 47px;
+    transition: .5s;
+    cursor: pointer;
+}
 
+.image_pro:hover .favorite {
+    opacity: 1;
+    transition: .5s;
+}
+
+.favorite:hover {
+    background-color: #ea8025;
+    transition: .5s;
+}
+
+.favorite:hover i {
+    color: #fff;
+}
+
+.favorite i {
+    font-size: 23px;
+    cursor: pointer;
+    color: #ea8025;
+}
 
 @media screen and (max-width:1440px) {
     .specialist h6 {
