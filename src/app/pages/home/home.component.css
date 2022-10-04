@@ -58,9 +58,12 @@
 .new_product {
     background-color: #98989826;
 }
-.name_product:hover{
+
+.name_product:hover {
     color: #ea8025;
+    cursor: pointer;
 }
+
 .content h1,
 .content h4 {
     color: #fff;
