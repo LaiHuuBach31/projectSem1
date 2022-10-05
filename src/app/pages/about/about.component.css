@@ -57,7 +57,19 @@ strong {
 .aboutus-pages .about-introduce .intro_detail,
 .intro-image {
     padding-bottom: 70px;
+    overflow: hidden;
 }
+
+.aboutus-pages .about-introduce .intro_detail,
+.intro-image img {
+    transition: 1s;
+}
+
+.aboutus-pages .about-introduce .intro_detail,
+.intro-image:hover img {
+    transform: scale(1.03);
+}
+
 
 .aboutus-pages .about-introduce .intro_detail .info-intro .title_intro {
     font-size: 40px;
@@ -99,11 +111,17 @@ strong {
     font-weight: 400;
 }
 
-.images {
-    padding: 0 !important;
+.images img {
+    transition: 1s;
+}
+
+.images:hover img {
+    transform: scale(1.05);
 }
 
 .images {
+    padding: 0 !important;
+    overflow: hidden;
     display: block;
     /* width: 100%; */
     height: auto;

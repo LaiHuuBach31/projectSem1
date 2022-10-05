@@ -9,15 +9,15 @@ import { ProductService } from 'src/app/service/product.service';
 export class ShopComponent implements OnInit {
 
   product:any;
+  page:any = 1;
 
   constructor(private productService:ProductService) { }
 
   ngOnInit(): void {
     // duyệt sản phẩm
-    this.productService.getAllProduct().subscribe((data)=>{
+    this.productService.getAllProductPage(this.page).subscribe((data)=>{
       this.product = data;
     })
-
     
   }
 
@@ -60,9 +60,11 @@ export class ShopComponent implements OnInit {
 
 
   PageChange(number:any){
-    alert(number)
-      this.productService.getAllProductPage(number).subscribe((data)=>{
+    // alert(number)
+    this.page = number;
+      this.productService.getAllProductPage(this.page).subscribe((data)=>{
           this.product = data;
       })
+      
   }
 }
