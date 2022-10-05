@@ -58,9 +58,6 @@ export class ShopComponent implements OnInit {
     }
   }
 
-  add_favorite(){
-    
-  }
 
   PageChange(number:any){
     // alert(number)
