@@ -11,5 +11,15 @@ export class CartComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  mark(mark: any) {
+    let quantily: any = document.getElementById('quantily')
+    if (mark == '-') {
+      if (quantily.value > 1) {
+        quantily.value = quantily.value - 1
+      }
+    } else {
+      quantily.value = Number(quantily.value) + 1
+    }
+  }
 
 }

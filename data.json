@@ -64,15 +64,9 @@
     "product": [
         {
             "id": 1,
-<<<<<<< HEAD
             "name": "Water Bottle",
             "description": "Investing in a reusable water bottle that you can refill throughout the day. Carrying one around with you will make you more likely to drink up.",
             "price": "10.18",
-=======
-            "name": "BBQ chicken breast",
-            "description": "A mighty meaty double helping of all the reasons you love our burger.",
-            "price": 8.00,
->>>>>>> c21369573c274f0dcbda8a416dfe6146f943a456
             "id_category_main": 1,
             "id_category_food": 1.1,
             "reviewer": 5,
@@ -214,15 +208,9 @@
         },
         {
             "id": 13,
-<<<<<<< HEAD
             "name": "BBQ chicken breast",
             "description": "A mighty meaty double helping of all the reasons you love our burger.",
             "price": "8.00",
-=======
-            "name": "Water Bottle",
-            "description": "Investing in a reusable water bottle that you can refill throughout the day. Carrying one around with you will make you more likely to drink up.",
-            "price": 10.18,
->>>>>>> c21369573c274f0dcbda8a416dfe6146f943a456
             "id_category_main": 1,
             "id_category_food": 1.1,
             "reviewer": 5,
