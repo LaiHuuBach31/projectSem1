@@ -183,6 +183,7 @@ header {
 .logo {
     width: 20%;
     cursor: pointer;
+    text-align: center;
 }
 
 .player-tile__number {
