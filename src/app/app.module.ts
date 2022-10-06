@@ -22,6 +22,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { HttpClientModule } from "@angular/common/http";
 import { LoginComponent } from './form/login/login.component';
 import { RegisterComponent } from './form/register/register.component';
+import { FilterProductComponent } from './pages/filter-product/filter-product.component';
 
 
 
@@ -40,7 +41,8 @@ import { RegisterComponent } from './form/register/register.component';
     AboutComponent,
     ContactComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    FilterProductComponent  
   ],
   imports: [
     BrowserModule,

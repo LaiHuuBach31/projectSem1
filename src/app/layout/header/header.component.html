@@ -7,35 +7,24 @@
                     <li class="menu_lv2_food"><a routerLink="/shop">MenuFood </a>
                         <div class="menu_FoodLv2">
                             <div class="row">
-                                <div class="col-lg-6 menu_food">
-                                    <p>FOOD</p>
-                                </div>
-                                <div class="col-lg-6 menu_food">
-                                    <p>BEVERAGE</p>
+                                <div class="col-lg-6 menu_food" style="cursor: pointer;" *ngFor="let item of cate_main">
+                                    <p routerLink="/shop/{{item.id}}">{{item.name}}</p>
                                 </div>
                             </div>
                             <div class="row mt-3">
                                 <div class="col-lg-6">
                                     <div class="category_food">
-                                        <p>Pizza</p>
-                                        <p>French fries</p>
-                                        <p>Fried chicken</p>
-                                        <p>Hamburger</p>
-                                        <p>Hot dog</p>
-                                        <p>Sandwich</p>
+                                        <p *ngFor="let item of cate_food">{{item.name}}</p>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="category_food">
-                                        <p>Cola</p>
-                                        <p>Fruit juice</p>
-                                        <p>Soft drink</p>
-                                        <p>Tea</p>
+                                        <p *ngFor="let item of cate_beverage">{{item.name}}</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="combo mt-3 menu_combo">
-                                <p>COMBO</p>
+                            <div class="combo mt-3 menu_combo" *ngFor="let item of cate_combo">
+                                <p>{{item.name}}</p>
                                 <i class="fa-solid fa-fire"></i>
                             </div>
                         </div>

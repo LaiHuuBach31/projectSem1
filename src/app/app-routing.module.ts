@@ -8,6 +8,7 @@ import { BlogComponent } from './pages/blog/blog.component';
 import { CartComponent } from './pages/cart/cart.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { DetailComponent } from './pages/detail/detail.component';
+import { FilterProductComponent } from './pages/filter-product/filter-product.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ShopComponent } from './pages/shop/shop.component';
 
@@ -21,6 +22,14 @@ const routes: Routes = [
   {path:'shop', component: ShopComponent},
   {path:'login', component: LoginComponent},
   {path:'register', component: RegisterComponent},
+  { path: '', component: HomeComponent },
+  { path: 'about', component: AboutComponent },
+  { path: 'blog', component: BlogComponent },
+  { path: 'cart', component: CartComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: 'detail', component: DetailComponent },
+  { path: 'shop', component: ShopComponent },
+  { path: 'filter', component: FilterProductComponent },
 ];
 
 @NgModule({
