@@ -141,16 +141,16 @@
                     </div>
                 </div>
                 <div class="col-lg-9">
-                    <div class="row">
+                    <div class="row align-self-stretch">
                         <div class="col-lg-4 around_item col-md-4 col-sm-6 " *ngFor="let item of product">
                             <div class="favorite">
                                 <i class="fa-solid fa-heart"></i>
                                 <!-- (click)="add_favorite()" -->
                             </div>
-                            <div class="card product">
-                                <div class="product_img">
-                                    <a routerLink="/detail" class="link_product">
-                                        <img class="card-img-top product_image" src="{{item.image}}" alt="Title">
+                            <div class="card product h-100">
+                                <div class="product_img" style="height: -webkit-fill-available;">
+                                    <a routerLink="/detail" class="link_product" >
+                                        <img   class="card-img-top product_image" src="{{item.image}}" alt="Title">
                                     </a>
                                 </div>
                                 <div class="card-body mt-2">
