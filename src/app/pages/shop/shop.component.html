@@ -206,27 +206,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 mt-3 col-sm-6 padding_010">
-                                        <div class="item_best_deal_768">
-                                            <div class="row">
-                                                <div class="col-md-4 img_best_deal_768 col-sm-4 col-4">
-                                                    <img src="https://demo2wpopal.b-cdn.net/poco/wp-content/uploads/2020/08/8-1-600x600.png"
-                                                        class="card-img" alt="">
-                                                </div>
-                                                <div class="col-md-8 item_info col-sm-8 col-8">
-                                                    <div class="star">
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star-half-stroke"></i>
-                                                    </div>
-                                                    <p>Chicken Burger</p>
-                                                    <span>$ 16.75</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -258,9 +237,12 @@
                     </div>
                     <div class="next_blog mt-3 mb-3">
                         <div class="number_page d-flex justify-content-center">
-                            <div class="number_one" (click)="PageChange(1)">1</div>
-                            <div class="number_one" (click)="PageChange(2)">2</div>
-                            <div class="number_one" (click)="PageChange(3)">3</div>
+                            <div class="number_one" (click)="PageChange(1)" [class.active_change_page]="page == 1">1
+                            </div>
+                            <div class="number_one" (click)="PageChange(2)" [class.active_change_page]="page == 2">2
+                            </div>
+                            <div class="number_one" (click)="PageChange(3)" [class.active_change_page]="page == 3">3
+                            </div>
                         </div>
                     </div>
                 </div>
