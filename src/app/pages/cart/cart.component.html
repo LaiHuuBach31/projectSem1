@@ -1,66 +1,128 @@
 <main>
     <div class="banner text-center">
-        <h1 class="">Cart</h1>
+        <h1 class="">CART</h1>
         <h4>Home > Your Shopping Cart</h4>
     </div>
-    <div class="list-cart-top mt-5">
-        <div class="container">
-            <div class="d-flex title_top " style="color: #ea8025; ">
-                <div class="col-lg-2 col-md-2 title_cart">
-                    <h4>ID</h4>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 title_cart">
-                    <h4>PRODUCT NAME</h4>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 d-flex title_cart">
-                    <div class="col-lg-3 col-md-3 col-sm-3">
-                        <h4>PRICE</h4>
-                    </div>
-                    <div class="col-lg-5 col-md-5 col-sm-5">
-                        <h4>QUANTITY</h4>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3">
-                        <h4>TOTAL</h4>
-                    </div>
-                    <div class="col-lg-1 col-md-1 col-sm-1">
-                        <h4>.</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="d-flex title_tops list_products">
-                <div class="col-lg-2 d-flex align-items-center col-md-4 col-sm-4 content_cart">
-                    <h5>1</h5>
-                </div>
-                <div class="col-lg-4 d-flex align-items-center col-md-4 col-sm-4 content_cart">
-                    <img src="http://www.nicdarkthemes.com/themes/restaurant/wp/demo/italian-food/wp-content/uploads/sites/4/2019/01/product-8.jpg"
-                        alt="" width="100px" height="100px">
-                    <h5 class="ml-3">Bean Soup</h5>
-                </div>
-                <div class="col-lg-6 d-flex align-items-center  col-md-6 col-sm-6 ">
-                    <div class="col-lg-3 col-md-3 col-sm-3 content_cart">
-                        <h5>$ 12.08</h5>
-                    </div>
-                    <div class="col-lg-5 col-md-5 col-sm-5">
-                        <div class="input ml-3">
-                            <button class="btn-fake btn left_ip" (click)="mark('-')" id="tru"><i
-                                    class="fa-solid fa-minus"></i></button>
-                            <input type="text" value="1" id="quantity">
-                            <button class="btn-fake btn right_ip" (click)="mark('+')" id="cong"><i
-                                    class="fa-solid fa-plus"></i></button>
+    <div class="list_cart_1024">
+        <div class="list-cart-top mt-5">
+            <div class="container container_custom ">
+                <div class="row d-flex justify-content-between ">
+                    <div class="row title_top col-lg-12 col-md-12 col-sm-6" style="color: #ea8025; ">
+                        <div class="col-lg-2 col-md-1 col-sm-12 title_cart">
+                            <h4>ID</h4>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12 title_cart">
+                            <h4>PRODUCT NAME</h4>
+                        </div>
+                        <div class="col-lg-6 col-md-7 col-sm-12 row title_cart title_top_576">
+                            <div class="col-lg-3 col-md-3 col-sm-12">
+                                <h4>PRICE</h4>
+                            </div>
+                            <div class="col-lg-5 col-md-5 col-sm-12">
+                                <h4>QUANTITY</h4>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-12">
+                                <h4>TOTAL</h4>
+                            </div>
+                            <div class="col-lg-1 col-md-1 col-sm-12">
+                                <h4></h4>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 content_cart">
-                        <h5>$ 12.08</h5>
-                    </div>
-                    <div class="col-lg-1 col-md-1 col-sm-1 content_cart">
-                        <h5><i class="fa-solid fa-xmark"></i></h5>
+                    <div class="row title_tops list_products col-lg-12 col-md-12 col-sm-6">
+                        <div class="col-lg-2 d-flex align-items-center col-md-1 col-sm-12 content_cart">
+                            <h5 class="id_cart">1</h5>
+                        </div>
+                        <div
+                            class="col-lg-4 d-flex align-items-center content_cart product_name_content col-md-4 col-sm-12">
+                            <img src="http://www.nicdarkthemes.com/themes/restaurant/wp/demo/italian-food/wp-content/uploads/sites/4/2019/01/product-8.jpg"
+                                alt="" width="100px" height="100px">
+                            <h5 class="ml-3">Bean Soup</h5>
+                        </div>
+                        <div class="col-lg-6 col-md-7 col-sm-12 row align-items-center ">
+                            <div class="col-lg-3 col-md-3 content_cart col-sm-12">
+                                <h5>$ 12.08</h5>
+                            </div>
+                            <div class="col-lg-5 col-md-5 col-sm-12">
+                                <div class="input ml-3">
+                                    <button class="btn-fake btn left_ip" (click)="mark('-')" id="tru"><i
+                                            class="fa-solid fa-minus"></i></button>
+                                    <input type="text" value="1" id="quantity">
+                                    <button class="btn-fake btn right_ip" (click)="mark('+')" id="cong"><i
+                                            class="fa-solid fa-plus"></i></button>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 content_cart col-sm-12">
+                                <h5>$ 12.08</h5>
+                            </div>
+                            <div class="col-lg-1 col-md-1 content_cart col-sm-12">
+                                <h5><i class="fa-solid fa-xmark"></i></h5>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- list_cart_768 -->
+    <div class="list_cart_768 container_custom mt-5">
+        <div class="list_cart">
+            <div class="row d-flex align-items-center item_title">
+                <div class="col-sm-6 col-4">
+                    <h5>ID</h5>
+                </div>
+                <div class="col-sm-6 col-8 text-center">
+                    <span>1</span>
+                </div>
+            </div>
+            <div class="row mt-4 d-flex align-items-center item_title">
+                <div class="col-sm-6 col-4">
+                    <h5>PRODUCT NAME</h5>
+                </div>
+                <div class="col-sm-6 col-8 d-flex align-items-center justify-content-center">
+                    <img src="http://www.nicdarkthemes.com/themes/restaurant/wp/demo/italian-food/wp-content/uploads/sites/4/2019/01/product-8.jpg"
+                        alt="" width="80px" height="80px">
+                    <span>Bean Soup</span>
+                </div>
+            </div>
+            <div class="row mt-4 d-flex align-items-center item_title">
+                <div class="col-sm-6 col-4">
+                    <h5>PRICE</h5>
+                </div>
+                <div class="col-sm-6 col-8 text-center">
+                    <span>$ 12.08</span>
+                </div>
+            </div>
+            <div class="row mt-4 d-flex align-items-center item_title">
+                <div class="col-sm-6 col-4">
+                    <h5>QUANTITY</h5>
+                </div>
+                <div class="col-sm-6 col-8 text-center">
+                    <div class="input ml-3">
+                        <button class="btn-fake btn left_ip" (click)="mark('-')" id="tru"><i
+                                class="fa-solid fa-minus"></i></button>
+                        <input type="text" value="1" id="quantity_768">
+                        <button class="btn-fake btn right_ip" (click)="mark('+')" id="cong"><i
+                                class="fa-solid fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4 d-flex align-items-center item_title">
+                <div class="col-sm-6 col-4">
+                    <h5>TOTAL</h5>
+                </div>
+                <div class="col-sm-6 col-8 text-center">
+                    <span>$ 12.08</span>
+                </div>
+            </div>
+            <div class="remove mt-4">
+                <span><i class="fa-solid fa-xmark"></i></span>
+            </div>
+        </div>
+    </div>
 
-    <div class="container updateCart mt-5 mb-5">
+
+    <div class="container updateCart mt-5 mb-5 container_custom">
         <div class="update">
             <button>UPDATE CART</button>
         </div>
@@ -70,17 +132,17 @@
     </div>
 
 
-    <div class="container mb-5">
+    <div class="container mb-5 container_custom">
         <div class="end_cart">
             <div class="cart_total mt-4">
                 <h5>CART TOTALS</h5>
             </div>
             <div class="mt-5">
                 <div class="d-flex align-items-center">
-                    <div class="col-lg-6 total">
+                    <div class="col-lg-6 col-md-6 col-sm-6 total">
                         <h6>Total : </h6>
                     </div>
-                    <div class="col-lg-6 total_price">
+                    <div class="col-lg-6 col-md-6 col-sm-6 total_price">
                         <h6>$ 6000</h6>
                     </div>
                 </div>
