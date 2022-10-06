@@ -20,6 +20,8 @@ import { ShopComponent } from './pages/shop/shop.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { HttpClientModule } from "@angular/common/http";
+import { LoginComponent } from './form/login/login.component';
+import { RegisterComponent } from './form/register/register.component';
 import { FilterProductComponent } from './pages/filter-product/filter-product.component';
 
 
@@ -38,7 +40,9 @@ import { FilterProductComponent } from './pages/filter-product/filter-product.co
     ShopComponent,
     AboutComponent,
     ContactComponent,
-    FilterProductComponent
+    LoginComponent,
+    RegisterComponent,
+    FilterProductComponent  
   ],
   imports: [
     BrowserModule,
