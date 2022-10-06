@@ -1,26 +1,20 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { ProductService } from 'src/app/service/product.service';
 
 @Component({
-  selector: 'app-shop',
-  templateUrl: './shop.component.html',
-  styleUrls: ['./shop.component.css']
+  selector: 'app-filter-product',
+  templateUrl: './filter-product.component.html',
+  styleUrls: ['./filter-product.component.css']
 })
-export class ShopComponent implements OnInit {
-
-  product: any;
+export class FilterProductComponent implements OnInit {
   page: any = 1;
   cate_food: any
   cate_beverage: any
-
-  constructor(private productService: ProductService) { }
+  
+  constructor(private productService: ProductService, private router: ActivatedRoute) { }
 
   ngOnInit(): void {
-    // duyệt sản phẩm
-    this.productService.getAllProductPage(this.page).subscribe((data) => {
-      this.product = data;
-      console.log(data)
-    })
     this.productService.getCategoryFood().subscribe((data) => {
       this.cate_food = data
     })
@@ -28,7 +22,6 @@ export class ShopComponent implements OnInit {
       this.cate_beverage = data
     })
   }
-  
   check: any = true
   clickIcon() {
     if (this.check) {
@@ -65,14 +58,13 @@ export class ShopComponent implements OnInit {
       this.check = true
     }
   }
+  // PageChange(number: any) {
+    
+  //   this.page = number;
+  //   this.productService.getAllProductPage(this.page).subscribe((data) => {
+  //     this.product = data;
+  //   })
 
+  // }
 
-  PageChange(number: any) {
-    // alert(number)
-    this.page = number;
-    this.productService.getAllProductPage(this.page).subscribe((data) => {
-      this.product = data;
-    })
-
-  }
 }

@@ -20,6 +20,7 @@ import { ShopComponent } from './pages/shop/shop.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { HttpClientModule } from "@angular/common/http";
+import { FilterProductComponent } from './pages/filter-product/filter-product.component';
 
 
 
@@ -36,7 +37,8 @@ import { HttpClientModule } from "@angular/common/http";
     CartComponent,
     ShopComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    FilterProductComponent
   ],
   imports: [
     BrowserModule,

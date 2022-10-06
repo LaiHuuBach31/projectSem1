@@ -9,14 +9,19 @@ const urlApi = "http://localhost:3000"
 })
 export class ProductService {
 
-  constructor(private http:HttpClient) { }
+  constructor(private http: HttpClient) { }
 
-  getAllProduct():Observable<any>{
+  getAllProduct(): Observable<any> {
     return this.http.get<any>(`${urlApi}/product`)
   }
-
+  getCategoryFood(): Observable<any> {
+    return this.http.get<any>(`${urlApi}/category_food`)
+  }
+  getCategoryBeverage(): Observable<any> {
+    return this.http.get<any>(`${urlApi}/category_Beverage`)
+  }
   // phân trang
-  getAllProductPage(pages:any):Observable<any>{
+  getAllProductPage(pages: any): Observable<any> {
     return this.http.get<any>(`${urlApi}/product?_page=${pages}&_limit=9`)
   }
 }
