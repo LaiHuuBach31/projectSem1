@@ -51,6 +51,13 @@
             "name": "Sandwich",
             "number": "10",
             "icon": "fa-solid fa-burger"
+<<<<<<< HEAD
+        },
+        {
+            "id": 1.7,
+            "name": "Dessert"
+=======
+>>>>>>> 335471f454deed925c19e5299f41e0e7804a15c1
         }
     ],
     "category_beverage": [
