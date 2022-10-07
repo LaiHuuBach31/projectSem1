@@ -20,6 +20,14 @@ export class ProductService {
   getCategoryBeverage(): Observable<any> {
     return this.http.get<any>(`${urlApi}/category_Beverage`)
   }
+  // filter_header
+  getPro(id: any): Observable<any> {
+    return this.http.get<any>(`${urlApi}/product?id_category_main=${id}`)
+  }
+  getProChild(id: any): Observable<any> {
+    return this.http.get<any>(`${urlApi}/product?id_category_child=${id}`)
+  }
+
   // phân trang
   getAllProductPage(pages: any): Observable<any> {
     return this.http.get<any>(`${urlApi}/product?_page=${pages}&_limit=9`)

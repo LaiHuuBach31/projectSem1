@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, ParamMap, Params } from '@angular/router';
 import { ProductService } from 'src/app/service/product.service';
 
 @Component({
@@ -8,10 +8,12 @@ import { ProductService } from 'src/app/service/product.service';
   styleUrls: ['./filter-product.component.css']
 })
 export class FilterProductComponent implements OnInit {
+  id: any
+  product: any;
   page: any = 1;
   cate_food: any
   cate_beverage: any
-  
+  dataPro: any = []
   constructor(private productService: ProductService, private router: ActivatedRoute) { }
 
   ngOnInit(): void {
@@ -21,7 +23,41 @@ export class FilterProductComponent implements OnInit {
     this.productService.getCategoryBeverage().subscribe((data) => {
       this.cate_beverage = data
     })
+    this.router.paramMap.subscribe((params: ParamMap) => {
+      this.id = Number(params.get('id'))
+      Number.isInteger(Number(this.id)) ? this.getPro() : this.getProductChild()
+    }
+    )
   }
+
+  getPro() {
+    this.productService.getPro(this.id).subscribe((data) => {
+      this.dataPro = data
+      console.log(this.dataPro)
+    })
+  }
+  getProductChild() {
+    this.productService.getProChild(this.id).subscribe((data) => {
+      this.dataPro = data
+    })
+  }
+
+  // PageChange(number: any) {
+  //   // alert(number)
+  //   this.page = number;
+  //   this.productService.getAllProductPage(this.page).subscribe((data) => {
+  //     this.product = data;
+  //   })
+  // }
+
+  // }
+
+
+
+
+
+
+
   check: any = true
   clickIcon() {
     if (this.check) {
@@ -58,13 +94,4 @@ export class FilterProductComponent implements OnInit {
       this.check = true
     }
   }
-  // PageChange(number: any) {
-    
-  //   this.page = number;
-  //   this.productService.getAllProductPage(this.page).subscribe((data) => {
-  //     this.product = data;
-  //   })
-
-  // }
-
 }

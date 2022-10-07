@@ -13,15 +13,6 @@ import { HomeComponent } from './pages/home/home.component';
 import { ShopComponent } from './pages/shop/shop.component';
 
 const routes: Routes = [
-  {path:'', component: HomeComponent},
-  {path:'about', component: AboutComponent},
-  {path:'blog', component: BlogComponent},
-  {path:'cart', component: CartComponent},
-  {path:'contact', component: ContactComponent},
-  {path:'detail', component: DetailComponent},
-  {path:'shop', component: ShopComponent},
-  {path:'login', component: LoginComponent},
-  {path:'register', component: RegisterComponent},
   { path: '', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'blog', component: BlogComponent },
@@ -29,7 +20,9 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'detail', component: DetailComponent },
   { path: 'shop', component: ShopComponent },
-  { path: 'filter', component: FilterProductComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'register', component: RegisterComponent },
+  { path: 'filter/:id', component: FilterProductComponent },
 ];
 
 @NgModule({

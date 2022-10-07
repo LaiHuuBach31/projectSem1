@@ -469,12 +469,6 @@
     cursor: pointer;
 }
 
-.number_one:hover {
-    background-color: #ea8025;
-    color: #fff;
-    transition: .5s;
-}
-
 @media screen and (max-width:1024px) {
     .around_item {
         padding: 0 10px;
@@ -590,5 +584,4 @@
         padding-left: 25px;
         padding-right: 25px;
     }
-
 }

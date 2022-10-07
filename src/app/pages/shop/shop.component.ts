@@ -29,6 +29,20 @@ export class ShopComponent implements OnInit {
     })
   }
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
   check: any = true
   clickIcon() {
     if (this.check) {
