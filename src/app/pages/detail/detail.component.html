@@ -9,7 +9,7 @@
             <div class=" row justify-content-between">
                 <div class="col-lg-5 ">
                     <div class="product">
-                        <img src="https://cdn.shopify.com/s/files/1/0301/5648/8842/files/instagram6.jpg?v=12421239196091974078" class="card-img" alt="">
+                        <img src="{{product.image}}" class="card-img" alt="">
                     </div>
                 </div>
                 <div class="col-lg-6  mt-2">
@@ -23,11 +23,11 @@
                             <p class="m-0">No reviews</p>
                         </div>
                         <div class="name_fastfood">
-                            <h1>Chilie Fried</h1>
+                            <h1>{{product.name}}</h1>
                         </div>
                         <div class="price">
                             <span class="me-3">$ 600 </span>
-                            <span>$ 450 </span>
+                            <span>$ {{product.price}}</span>
                         </div>
                     </div>
                     <div class="describe_product mt-4">
