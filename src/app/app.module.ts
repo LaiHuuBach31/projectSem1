@@ -42,7 +42,7 @@ import { FilterProductComponent } from './pages/filter-product/filter-product.co
     ContactComponent,
     LoginComponent,
     RegisterComponent,
-    FilterProductComponent  
+    FilterProductComponent,
   ],
   imports: [
     BrowserModule,

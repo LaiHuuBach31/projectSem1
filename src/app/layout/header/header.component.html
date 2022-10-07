@@ -8,23 +8,25 @@
                         <div class="menu_FoodLv2">
                             <div class="row">
                                 <div class="col-lg-6 menu_food" style="cursor: pointer;" *ngFor="let item of cate_main">
-                                    <p routerLink="/shop/{{item.id}}">{{item.name}}</p>
+                                    <p routerLink="/filter/{{item.id}}">{{item.name}}</p>
                                 </div>
                             </div>
                             <div class="row mt-3">
                                 <div class="col-lg-6">
                                     <div class="category_food">
-                                        <p *ngFor="let item of cate_food">{{item.name}}</p>
+                                        <p *ngFor="let item of cate_food" routerLink="/filter/{{item.id}}">{{item.name}}
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="category_food">
-                                        <p *ngFor="let item of cate_beverage">{{item.name}}</p>
+                                        <p *ngFor="let item of cate_beverage" routerLink="/filter/{{item.id}}">
+                                            {{item.name}}</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="combo mt-3 menu_combo" *ngFor="let item of cate_combo">
-                                <p>{{item.name}}</p>
+                                <p routerLink="/filter/{{item.id}}">{{item.name}}</p>
                                 <i class="fa-solid fa-fire"></i>
                             </div>
                         </div>
