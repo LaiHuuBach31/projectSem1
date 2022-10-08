@@ -18,7 +18,7 @@ const routes: Routes = [
   { path: 'blog', component: BlogComponent },
   { path: 'cart', component: CartComponent },
   { path: 'contact', component: ContactComponent },
-  { path: 'detail', component: DetailComponent },
+  { path: 'detail/:id', component: DetailComponent },
   { path: 'shop', component: ShopComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
