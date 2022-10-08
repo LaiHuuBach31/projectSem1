@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { HomeService } from 'src/app/service/home.service';
 
 @Component({
@@ -12,7 +12,11 @@ export class HeaderComponent implements OnInit {
     cate_food: any
     cate_beverage: any
     cate_combo: any
-    constructor(private homeService: HomeService, private router: ActivatedRoute) { }
+    user: any
+
+    catebyid1: any
+    catebyid2: any
+    constructor(private homeService: HomeService, private router: ActivatedRoute, private route: Router) { }
 
     ngOnInit(): void {
         this.homeService.getCategoriesMain().subscribe((data) => {
@@ -27,7 +31,29 @@ export class HeaderComponent implements OnInit {
         this.homeService.getCategoriesCombo().subscribe((data) => {
             this.cate_combo = data
         })
+        this.homeService.getCategoryById1().subscribe((data) => {
+            this.catebyid1 = data
+            console.log(this.catebyid1)
+        })
+        this.homeService.getCategoryById2().subscribe((data) => {
+            this.catebyid2 = data
+        })
+        let data: any = localStorage.getItem('account')
+        this.user = JSON.parse(data)
     }
+    sign_out() {
+        localStorage.removeItem('account')
+        let data: any = localStorage.getItem('account')
+        this.user = JSON.parse(data)
+    }
+    another_acc() {
+        localStorage.removeItem('account')
+        let data: any = localStorage.getItem('account')
+        this.user = JSON.parse(data)
+        this.route.navigate(['/login'])
+    }
+
+
 
     check: any = true
     onMenu() {

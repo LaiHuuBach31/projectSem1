@@ -21,4 +21,10 @@ export class HomeService {
   getCategoriesCombo(): Observable<any> {
     return this.http.get<any>(`${url}/category_combo`)
   }
+  getCategoryById1(): Observable<any> {
+    return this.http.get<any>(`${url}/category_main?id=1`)
+  }
+  getCategoryById2(): Observable<any> {
+    return this.http.get<any>(`${url}/category_main?id=2`)
+  }
 }

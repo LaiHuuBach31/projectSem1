@@ -49,7 +49,20 @@
             </div>
             <div class="menu_right">
                 <a href=""><i class="fa-sharp fa-solid fa-magnifying-glass"></i></a>
-                <a href="" routerLink="/login"><i class="fa-regular fa-user"></i></a>
+                <a href="" routerLink="/login" *ngIf="!user"><i class="fa-regular fa-user"></i></a>
+                <div *ngIf="user" class="img_user">
+                    <img src="https://media.deponline.info/images/d365/fashionista-thai-voi-luong-nguoi-theo-doi-khung-tren-instagram/fashionista-thai-voi-luong-nguoi-theo-doi-khung-tren-instagram_5ed13922-702f-4429-b267-66bfd7f505b0.jpeg"
+                        alt="" class="img_customer">
+                    <div class="log_out">
+                        <div class="info_person mb-4">
+                            <img src="https://media.deponline.info/images/d365/fashionista-thai-voi-luong-nguoi-theo-doi-khung-tren-instagram/fashionista-thai-voi-luong-nguoi-theo-doi-khung-tren-instagram_5ed13922-702f-4429-b267-66bfd7f505b0.jpeg"
+                                alt="" class="img_info_customer">
+                            <span>{{user.name}}</span>
+                        </div>
+                        <button class="sign_out" (click)="sign_out()">Sign out</button>
+                        <button class="mt-4 another" (click)="another_acc()">Use another account</button>
+                    </div>
+                </div>
                 <a routerLink="/cart"><i class="fa-solid fa-bag-shopping"></i></a>
             </div>
         </div>
@@ -79,9 +92,14 @@
             <div class="nav-main-1024">
                 <div class="nav-1024">
                     <div class="nav-header-1024">
-                        <div class="account">
+                        <div class="account" *ngIf="!user">
                             <a href=""><i class="fa-regular fa-user"></i></a>
                             <span>ACCOUNT</span>
+                        </div>
+                        <div class="user" *ngIf="user">
+                            <img src="https://media.deponline.info/images/d365/fashionista-thai-voi-luong-nguoi-theo-doi-khung-tren-instagram/fashionista-thai-voi-luong-nguoi-theo-doi-khung-tren-instagram_5ed13922-702f-4429-b267-66bfd7f505b0.jpeg"
+                                alt="">
+                            <span>{{user.name}}</span>
                         </div>
                         <div class="close_1024">
                             <span>INT / $</span>
@@ -99,22 +117,21 @@
                             </div>
                             <div class="menuFood_1024" id="menuFood_1024">
                                 <div class="food_1024">
-                                    <h5>FOOD</h5>
-                                    <p>Pizza</p>
-                                    <p>French fries</p>
-                                    <p>Fried chicken</p>
-                                    <p>Hamburger</p>
-                                    <p>Hot dog</p>
-                                    <p>Sandwich</p>
+                                    <h5 *ngFor="let item of catebyid1" routerLink="/filter/{{item.id}}">{{item.name}}
+                                    </h5>
+                                    <p *ngFor="let item of cate_food" routerLink="/filter/{{item.id}}">{{item.name}}</p>
                                 </div>
                                 <div class="food_1024">
-                                    <h5>BEVERAGE</h5>
-                                    <p>Cola</p>
+                                    <h5 *ngFor="let item of catebyid2" routerLink="/filter/{{item.id}}">{{item.name}}
+                                    </h5>
+                                    <p *ngFor="let item of cate_beverage" routerLink="/filter/{{item.id}}">{{item.name}}
+                                    </p>
                                     <p>Fruit juice</p>
                                     <p>Soft drink</p>
                                     <p>Tea</p>
                                 </div>
-                                <div class="combo_1024">
+                                <div class="combo_1024" *ngFor="let item of cate_combo"
+                                    routerLink="/filter/{{item.id}}">
                                     <h5>COMBO</h5>
                                     <i class="fa-solid fa-fire"></i>
                                 </div>
@@ -137,8 +154,11 @@
                         <a routerLink="/contact">CONTACT</a>
                     </div>
                 </div>
-                <div class="logout">
-                    <span>LOG IN</span>
+                <div class="logout" *ngIf="!user">
+                    <span routerLink="/login">LOG IN</span>
+                </div>
+                <div class="logout" *ngIf="user">
+                    <span (click)="sign_out()">LOG OUT</span>
                 </div>
             </div>
         </div>

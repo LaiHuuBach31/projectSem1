@@ -436,7 +436,7 @@
 
 .favorite {
     position: absolute;
-    z-index: 10;
+    z-index: 3;
     top: 5%;
     right: 12%;
 }
