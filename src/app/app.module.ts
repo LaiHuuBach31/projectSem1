@@ -23,6 +23,7 @@ import { HttpClientModule } from "@angular/common/http";
 import { LoginComponent } from './form/login/login.component';
 import { RegisterComponent } from './form/register/register.component';
 import { FilterProductComponent } from './pages/filter-product/filter-product.component';
+import { SearchPipe } from './search.pipe';
 
 
 
@@ -43,6 +44,7 @@ import { FilterProductComponent } from './pages/filter-product/filter-product.co
     LoginComponent,
     RegisterComponent,
     FilterProductComponent,
+    SearchPipe,
   ],
   imports: [
     BrowserModule,
