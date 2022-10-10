@@ -12,59 +12,119 @@
     display: inline-block;
 }
 
+.container_custom {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 80px;
+}
+
 .evaluate i {
     color: yellow;
+    padding-right: 5px;
 }
 
 .evaluate p {
     font-size: 10px;
 }
 
-.price span:first-child {
-    text-decoration: line-through;
+.name_fastfood h1 {
+    font-size: 45px;
+    font-family: cursive;
+    font-weight: 700;
+    letter-spacing: 2px;
 }
 
 .infor_product {
     border-bottom: 1px solid #9898986d;
+    padding-bottom: 10px;
+}
+
+.price span {
+    color: #808080;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.describe_product {
+    color: #808080;
+    letter-spacing: 0.5px;
+    line-height: 28px;
+}
+
+select {
+    width: 20%;
+    padding: 5px 0 5px 5px;
 }
 
 .size h5 {
-    border-bottom: 3px solid #111;
+    margin: 0;
+    font-size: 23px;
+    letter-spacing: 1px;
 }
 
 .size span {
-    border: 1px solid #9898986d;
-    padding: 5px 20px;
-    margin: 0 15px;
-    background: #9898986d;
+    padding: 10px 12px;
+    background-color: #dedede;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: .3s;
 }
 
-.addCart a {
+.size span:hover {
+    background-color: #ea8025;
+    color: #fff;
+    transition: .3s;
+}
+
+.addCart {
+    width: 40%;
+}
+
+.addCart button {
     text-decoration: none;
     font-weight: 600;
-    border: 1px solid #111;
     background-color: #111;
     color: #fff;
-    padding: 10px 30px;
+    width: 100%;
+    padding: 13px 0;
+    transition: .4s;
+    border: none;
 }
 
-.detail_product {
-    padding: 30px 0px;
-    border-bottom: 2px solid #9898986d;
+.addCart button:hover {
+    background-color: #5f8e3e;
+    transition: .4s;
 }
 
-.add_information a {
-    text-decoration: none;
-    padding: 0px 50px;
+.add_information {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add_information p {
+    margin: 0 50px;
     color: #111;
-    font-weight: 600;
-    border-bottom: 2px solid #111;
-    /* display: inline-block; */
+    font-weight: 700;
+    font-size: 20px;
+    font-family: cursive;
 }
 
-.add_information a:first-child,
-.add_information a:last-child {
-    border-bottom: none;
+.add_info_title {
+    position: relative;
+}
+
+.add_info_title::after {
+    content: "";
+    position: absolute;
+    height: 1.5px;
+    background-color: #111;
+    width: 40%;
+    bottom: -30%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .buy a {
@@ -80,8 +140,15 @@
     background-color: #98989822;
 }
 
-.latest_pro h1 {
-    font-weight: 700;
+.product_add img {
+    object-fit: cover;
+}
+
+.latest_pro p {
+    color: #111;
+    font-weight: 500;
+    font-size: 30px;
+    font-family: cursive;
 }
 
 
