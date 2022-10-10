@@ -99,8 +99,3 @@ strong {
     background-color: #fff;
     color: #ea8025;
 }
-@media screen and (max-width:426px){
-    .banner{
-        padding: 40px 0px;
-    }
-}
