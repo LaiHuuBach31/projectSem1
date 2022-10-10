@@ -54,9 +54,7 @@
         },
         {
             "id": 1.7,
-            "name": "Dessert",
-            "number": "13",
-            "icon": "fa-solid fa-cookie"
+            "name": "Dessert"
         }
     ],
     "category_beverage": [

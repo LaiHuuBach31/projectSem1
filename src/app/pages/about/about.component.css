@@ -25,7 +25,7 @@
 
 .banner .container-v2 .title-page h2::before {
     content: "";
-    height: 1px;
+    height: 2px;
     width: 74px;
     position: absolute;
     left: 50%;

@@ -151,19 +151,6 @@ select {
     font-family: cursive;
 }
 
-.detail_img_slide {
-    position: relative;
-}
-
-.product img {
-    object-fit: cover;
-}
-
-.detail_info_pro {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 
 @media screen and (max-width:2560px) {
     .window_768 {
