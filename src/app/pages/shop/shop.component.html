@@ -22,13 +22,14 @@
                         <div class="clear_all mt-3">
                             <a>
                                 <i class="fa-solid fa-trash"></i>
-                                <span>CLEAR ALL</span>
+                                <span (click)="clear_all()">CLEAR ALL</span>
                             </a>
                         </div>
                         <div class="search mt-3">
                             <div class="search-box">
                                 <button class="btn-search"><i class="fas fa-search"></i></button>
-                                <input type="text" class="input-search" placeholder="Type to Search...">
+                                <input type="text" class="input-search" placeholder="Type to Search..."
+                                    [(ngModel)]="keyword">
                             </div>
                         </div>
                         <div class="categories mt-2">
@@ -44,7 +45,8 @@
                                 </div>
                                 <div class="menu_cate mt-3" id="menu_food">
                                     <div class="item" *ngFor="let item of cate_food">
-                                        <div class="title_item">
+                                        <div class="title_item" id="title{{item.id}}" (click)="get_id(item.id)"
+                                            [class.title_item_click]="id == item.id">
                                             <i class="{{item.icon}}"></i>
                                             <span>{{item.name}}</span>
                                         </div>
@@ -63,7 +65,8 @@
                                 </div>
                                 <div class="menu_cate mt-3" id="menu_drink">
                                     <div class="item" *ngFor="let item of cate_beverage">
-                                        <div class="title_item">
+                                        <div class="title_item" id="title{{item.id}}" (click)="get_id(item.id)"
+                                            [class.title_item_click]="id == item.id">
                                             <i class="{{item.icon}}"></i>
                                             <span>{{item.name}}</span>
                                         </div>
@@ -79,13 +82,20 @@
                                 <i class="fa-solid fa-bars-staggered"></i>
                                 <h4>PRICE ($)</h4>
                             </div>
-                            <div class="range">
-                                <div class="sort_price mt-4" id="sort_pr">
-                                    <input type="text" value="0">
+                            <div class="range mt-4">
+                                <div class="max_min_value">
+                                    <span>0</span>
+                                    <span>1000</span>
+                                </div>
+                                <div class="sort_price mt-2" id="sort_pr">
+                                    <input type="text" [(ngModel)]="min_price">
                                     <span>—</span>
-                                    <input type="text" value="1000">
+                                    <input type="text" [(ngModel)]="max_price">
                                 </div>
                             </div>
+                        </div>
+                        <div class="address_filter">
+                            <button class="btn_filter" (click)="filter_general()">Filter</button>
                         </div>
                         <div class="best_deals">
                             <div class="title_price mt-4">
@@ -144,14 +154,15 @@
                 </div>
                 <div class="col-lg-9">
                     <div class="row align-self-stretch">
-                        <div class="col-lg-4 around_item col-md-4 col-sm-6 " *ngFor="let item of product">
+                        <div class="col-lg-4 around_item col-md-4 col-sm-6 "
+                            *ngFor="let item of product | search: keyword">
                             <div class="favorite">
                                 <i class="fa-solid fa-heart"></i>
                                 <!-- (click)="add_favorite()" -->
                             </div>
                             <div class="card product h-100">
                                 <div class="product_img" style="height: -webkit-fill-available;">
-                                    <a routerLink="/detail" class="link_product">
+                                    <a routerLink="/detail/{{item.id}}" class="link_product">
                                         <img class="card-img-top product_image" src="{{item.image}}" alt="Title">
                                     </a>
                                 </div>
@@ -168,12 +179,14 @@
                     </div>
                     <div class="next_blog mt-3 mb-3">
                         <div class="number_page d-flex justify-content-center">
-                            <div class="number_one" (click)="PageChange(1)" [class.active_change_page]="page == 1">1
+                            <div class="number_one" *ngFor="let item of number_page" (click)="PageChange(item)"
+                                [class.active_change_page]="page == item">
+                                {{item}}
                             </div>
-                            <div class="number_one" (click)="PageChange(2)" [class.active_change_page]="page == 2">2
+                            <!-- <div class="number_one" (click)="PageChange(2)" [class.active_change_page]="page == 2">2
                             </div>
                             <div class="number_one" (click)="PageChange(3)" [class.active_change_page]="page == 3">3
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>

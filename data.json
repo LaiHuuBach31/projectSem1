@@ -130,7 +130,7 @@
             "id": 4,
             "name": "Chocolate Muffin",
             "description": "A mighty meaty double helping of all the reasons you love our burger.",
-            "price": 17.20,
+            "price": 17.2,
             "id_category_main": 1,
             "id_category_child": 1.7,
             "reviewer": 15,
@@ -142,7 +142,7 @@
             "id": 5,
             "name": "Chocolate cake",
             "description": "Browse unique Coca-Cola products, clothing, & accessories, or customize Coke bottles and gifts",
-            "price": 11.00,
+            "price": 11,
             "id_category_main": 1,
             "id_category_child": 1.7,
             "reviewer": 10,
@@ -166,7 +166,7 @@
             "id": 7,
             "name": "Molto Tagliatelle",
             "description": "A mighty meaty double helping of all the reasons you love our burger.",
-            "price": 8.00,
+            "price": 8,
             "id_category_main": 1,
             "id_category_child": 1.1,
             "reviewer": 25,
@@ -475,6 +475,11 @@
         {}
     ],
     "account": [
-        {}
+        {
+            "name": "duy",
+            "email": "duy@gmail.com",
+            "password": "123456",
+            "id": 1
+        }
     ]
 }

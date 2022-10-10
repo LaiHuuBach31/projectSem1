@@ -27,7 +27,10 @@ export class ProductService {
   getProChild(id: any): Observable<any> {
     return this.http.get<any>(`${urlApi}/product?id_category_child=${id}`)
   }
-
+  // xem chi tiết sản phẩm
+  getDeatilProduct(id:any):Observable<any>{
+    return this.http.get(`${urlApi}/product/${id}`)
+  }
   // phân trang
   getAllProductPage(pages: any): Observable<any> {
     return this.http.get<any>(`${urlApi}/product?_page=${pages}&_limit=9`)

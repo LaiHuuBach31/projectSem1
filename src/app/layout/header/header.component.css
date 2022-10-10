@@ -221,6 +221,7 @@ header {
     font-size: 24px;
     transition: .3s;
     margin: 0 15px;
+    padding: 0 15px;
 }
 
 .menu_right a:hover {
@@ -228,6 +229,93 @@ header {
     transform: translateY(-0.25em);
     color: #fff;
 }
+
+.img_user {
+    position: relative;
+}
+
+.menu_right .img_user:hover .img_customer {
+    box-shadow: 0 .7em .5em -.4em currentColor;
+    transform: translateY(-0.25em);
+    color: #fff;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.menu_right .img_user:hover .log_out {
+    display: block;
+}
+
+.img_user .img_customer {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.log_out {
+    background-color: #fbf7e8;
+    border-radius: 7px;
+    padding: 20px 15px;
+    position: absolute;
+    width: 250px;
+    left: -100px;
+    z-index: 1000;
+    display: none;
+}
+
+.log_out button {
+    display: block;
+    text-align: center;
+    width: 100%;
+    border-radius: 7px;
+    padding: 10px;
+    color: #ea8025;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid #ea8025;
+    transition: .4s;
+}
+
+.log_out .sign_out:hover {
+    background-color: #ea8025;
+    color: #fff;
+    transition: .4s;
+}
+
+.log_out .another:hover {
+    background-color: #5f8e3e;
+    color: #fff;
+    transition: .4s;
+}
+
+.info_person {
+    display: flex;
+    align-items: center;
+}
+
+.img_info_customer {
+    width: 70px !important;
+    height: 70px !important;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.info_person span {
+    margin-left: 20px;
+    text-transform: capitalize;
+    font-size: 24px;
+    font-family: inherit;
+    font-weight: 600;
+    color: #808080;
+    cursor: pointer;
+}
+
+.info_person span:hover {
+    color: #ea8025;
+}
+
 
 /*1024px*/
 .container_custom_1024 {
@@ -336,7 +424,7 @@ header {
 
 .nav-1024 {
     background-color: #ea8025;
-    padding: 15px 20px;
+    padding: 14px 20px;
     border-bottom: 3px solid #ccc;
     z-index: 15;
 }
@@ -524,6 +612,36 @@ header {
 
 .display_block {
     display: block;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.user img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user span {
+    margin-left: 10px;
+    text-transform: capitalize;
+    font-size: 17px;
+    font-family: inherit;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
+}
+
+.user span:hover {
+    color: #808080;
 }
 
 @media screen and (max-width:1024px) {

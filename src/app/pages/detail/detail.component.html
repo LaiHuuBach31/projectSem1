@@ -1,15 +1,16 @@
 <app-header></app-header>
+
 <body>
     <div class="banner text-center">
         <h1 class="">Chilie Fried</h1>
         <h4>Home > Shop > Chilie Fried</h4>
     </div>
-    <div class=" detail_product">
-        <div class="container">
-            <div class=" row justify-content-between">
+    <div class=" detail_product mt-5">
+        <div class="container_custom">
+            <div class=" row d-flex justify-content-between">
                 <div class="col-lg-5 ">
                     <div class="product">
-                        <img src="https://cdn.shopify.com/s/files/1/0301/5648/8842/files/instagram6.jpg?v=12421239196091974078" class="card-img" alt="">
+                        <img src="{{product.image}}" class="card-img" alt="">
                     </div>
                 </div>
                 <div class="col-lg-6  mt-2">
@@ -22,59 +23,62 @@
                             <i class="fa-solid fa-star"></i>
                             <p class="m-0">No reviews</p>
                         </div>
-                        <div class="name_fastfood">
-                            <h1>Chilie Fried</h1>
+                        <div class="name_fastfood mt-2">
+                            <h1>{{product.name}}</h1>
                         </div>
-                        <div class="price">
-                            <span class="me-3">$ 600 </span>
-                            <span>$ 450 </span>
+                        <div class="price mt-2">
+                            <span>$ {{product.price}}</span>
                         </div>
                     </div>
                     <div class="describe_product mt-4">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, id non, nemo alias sed distinctio laborum, 
-                        sint quidem hic quod accusamus omnis exercitationem? Mollitia harum quisquam recusandae tenetur optio quidem?
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, id non, nemo alias sed distinctio laborum, 
-                        sint quidem hic quod accusamus omnis exercitationem? Mollitia harum quisquam recusandae tenetur optio quidem?
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, id non, nemo alias sed distinctio laborum, 
-                        sint quidem hic quod accusamus omnis exercitationem? Mollitia harum quisquam recusandae tenetur optio quidem?
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, id non, nemo alias sed
+                        distinctio laborum,
+                        sint quidem hic quod accusamus omnis exercitationem? Mollitia harum quisquam recusandae tenetur
+                        optio quidem?
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, id non, nemo alias sed
+                        distinctio laborum,
+                        sint quidem hic quod accusamus omnis exercitationem? Mollitia harum quisquam recusandae tenetur
+                        optio quidem?
                     </div>
                     <div class="option_user">
-                        <div class="size d-flex align-items-center mt-4 mb-4">
-                            <div class="row">
-                                <div class="col-lg-2 col-md-2 col-sm-2">
-                                    <h5>Size:</h5>
+                        <div class="size mt-4 mb-4">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-lg-2 col-md-4 col-sm-2">
+                                    <h5>Size :</h5>
                                 </div>
-                                <div class="col-lg-10 col-md-10 col-sm-10">
-                                    <span>S</span>
-                                    <span>M</span>
-                                    <span>L</span>
+                                <div class="col-lg-10 col-md-8 col-sm-10">
+                                    <select name="" id="" class="">
+                                        <option value="S">S</option>
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                    </select>
                                 </div>
-                            </div>  
+                            </div>
                         </div>
-                        <div class="size d-flex align-items-center mt-4 mb-4">
-                            <div class="row">
-                                <div class="col-lg-2 col-md-2 col-sm-2">
+                        <div class="size mt-5 mb-4">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-lg-2 col-md-4 col-sm-2">
                                     <h5>Option:</h5>
                                 </div>
-                                <div class="col-lg-10 col-md-10 col-sm-10">
+                                <div class="col-lg-10 col-md-8 col-sm-10">
                                     <span>Beef</span>
                                     <span>Chese</span>
                                     <span>Salad</span>
                                 </div>
-                            </div>  
+                            </div>
                         </div>
                     </div>
                     <div class="addCart mt-5">
-                        <a href="">ADD TO CART</a>
+                        <button>ADD TO CART</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="mt-4 mb-5 add_information text-center">
-        <a href="">DESCRIPTION</a>
-        <a href="">ADDITIONAL INFORMATION</a>
-        <a href="">REVIEW</a>
+    <div class=" mb-5 add_information text-center">
+        <p>DESCRIPTION</p>
+        <p class="add_info_title">ADDITIONAL INFORMATION</p>
+        <p>REVIEW</p>
     </div>
     <div class="buyNow">
         <div class="container">
@@ -87,74 +91,83 @@
                         </div>
                     </div>
                     <div class="describe_product mt-4">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, id non, nemo alias sed distinctio laborum, 
-                        sint quidem hic quod accusamus omnis exercitationem? Mollitia harum quisquam recusandae tenetur optio quidem?
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, id non, nemo alias sed distinctio laborum, 
-                        sint quidem hic quod accusamus omnis exercitationem? Mollitia harum quisquam recusandae tenetur optio quidem?
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, id non, nemo alias sed
+                        distinctio laborum,
+                        sint quidem hic quod accusamus omnis exercitationem? Mollitia harum quisquam recusandae tenetur
+                        optio quidem?
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, id non, nemo alias sed
+                        distinctio laborum,
+                        sint quidem hic quod accusamus omnis exercitationem? Mollitia harum quisquam recusandae tenetur
+                        optio quidem?
                     </div>
                     <div class="buy mt-5">
                         <a href="">Buy Now</a>
                     </div>
                 </div>
                 <div class="col-lg-5 col-md-5 col-sm-5">
-                    <div class="product">
-                        <img src="https://cdn.shopify.com/s/files/1/0301/5648/8842/files/instagram3.jpg?v=10845364633733112642" class="card-img" height="400px" alt="">
+                    <div class="product_add">
+                        <img src="https://cdn.shopify.com/s/files/1/0301/5648/8842/files/instagram3.jpg?v=10845364633733112642"
+                            class="card-img" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="text-center latest_pro mt-5 mb-4">
-        <h1>Latest products</h1>
+        <p>Latest products</p>
     </div>
     <div class="container mb-5">
         <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-3">
                 <div class="list_product">
                     <div class="image_pro">
-                        <img src="https://cdn.shopify.com/s/files/1/0301/5648/8842/products/6.2.jpg?v=1578997770" class="card-img" alt="">
+                        <img src="https://cdn.shopify.com/s/files/1/0301/5648/8842/products/6.2.jpg?v=1578997770"
+                            class="card-img" alt="">
                     </div>
                 </div>
                 <div class="text-center">
                     <h6 class="mt-2" style="font-weight: 700;">Double Classic Burger</h6>
-                    <h6  class="m-0">$ 9.880</h6>
+                    <h6 class="m-0">$ 9.880</h6>
                 </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3">
                 <div class="list_product">
                     <div class="image_pro">
-                        <img src="https://cdn.shopify.com/s/files/1/0301/5648/8842/products/8_4.jpg?v=1579052951" class="card-img" alt="">
+                        <img src="https://cdn.shopify.com/s/files/1/0301/5648/8842/products/8_4.jpg?v=1579052951"
+                            class="card-img" alt="">
                     </div>
                 </div>
                 <div class="text-center">
                     <h6 class="mt-2" style="font-weight: 700;">Double Classic Burger</h6>
-                    <h6  class="m-0">$ 9.880</h6>
+                    <h6 class="m-0">$ 9.880</h6>
                 </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3">
                 <div class="list_product">
                     <div class="image_pro">
-                        <img src="https://cdn.shopify.com/s/files/1/0301/5648/8842/products/6.5.jpg?v=1578997865" class="card-img" alt="">
+                        <img src="https://cdn.shopify.com/s/files/1/0301/5648/8842/products/6.5.jpg?v=1578997865"
+                            class="card-img" alt="">
                     </div>
                 </div>
                 <div class="text-center">
                     <h6 class="mt-2" style="font-weight: 700;">Double Classic Burger</h6>
-                    <h6  class="m-0">$ 9.880</h6>
+                    <h6 class="m-0">$ 9.880</h6>
                 </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3">
                 <div class="list_product">
                     <div class="image_pro">
-                        <img src="https://cdn.shopify.com/s/files/1/0301/5648/8842/products/7.4.jpg?v=1578998675" class="card-img" alt="">
+                        <img src="https://cdn.shopify.com/s/files/1/0301/5648/8842/products/7.4.jpg?v=1578998675"
+                            class="card-img" alt="">
                     </div>
                 </div>
                 <div class="text-center">
                     <h6 class="mt-2" style="font-weight: 700;">Double Classic Burger</h6>
-                    <h6  class="m-0">$ 9.880</h6>
+                    <h6 class="m-0">$ 9.880</h6>
                 </div>
             </div>
         </div>
     </div>
-    
+
 </body>
 <app-footer></app-footer>

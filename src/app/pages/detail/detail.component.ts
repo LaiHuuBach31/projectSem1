@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { ProductService } from 'src/app/service/product.service';
 
 @Component({
   selector: 'app-detail',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetailComponent implements OnInit {
 
-  constructor() { }
+  product:any;
+
+  constructor(private proService:ProductService, private router:ActivatedRoute) { }
 
   ngOnInit(): void {
+    let _id = this.router.snapshot.params['id']
+    this.proService.getDeatilProduct(_id).subscribe((data)=>{
+      this.product = data;
+    })
   }
 
 }
