@@ -151,6 +151,19 @@ select {
     font-family: cursive;
 }
 
+.detail_img_slide {
+    position: relative;
+}
+
+.product img {
+    object-fit: cover;
+}
+
+.detail_info_pro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 @media screen and (max-width:2560px) {
     .window_768 {
@@ -158,9 +171,21 @@ select {
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:991.5px) {
+    .container_custom {
+        padding: 0 30px;
+    }
+
     .banner {
-        padding: 40px 0px;
+        padding: 70px 0px;
+    }
+
+    .detail_info_pro {
+        align-items: flex-start;
+    }
+
+    select {
+        width: 35%;
     }
 
     .w_768 {
@@ -170,10 +195,57 @@ select {
     .window_768 {
         display: block;
     }
+
+    .name_fastfood h1 {
+        font-size: 30px;
+    }
+
+    .size h5 {
+        font-size: 18px;
+    }
+
+    .describe_product {
+        font-size: 15px;
+    }
+
+    .add_information p {
+        font-size: 16px;
+    }
+
+    .add_information p:first-child,
+    p:last-child {
+        display: none;
+    }
+
 }
 
-@media screen and (max-width:426px) {
+.list_product {
+    padding: 0 10px;
+}
+
+.more_item {
+    position: relative;
+}
+
+@media screen and (max-width:575.5px) {
     .window_768 {
         display: none;
     }
+
+    .size_detail {
+        margin-top: 20px;
+    }
+
+    select {
+        width: 40%;
+    }
+
+    .container_custom {
+        padding: 0 20px;
+    }
+
+    .opt {
+        margin-top: 30px;
+    }
+
 }

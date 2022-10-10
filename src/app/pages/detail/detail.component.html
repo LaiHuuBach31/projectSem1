@@ -7,13 +7,22 @@
     </div>
     <div class=" detail_product mt-5">
         <div class="container_custom">
-            <div class=" row d-flex justify-content-between">
-                <div class="col-lg-5 ">
-                    <div class="product">
-                        <img src="{{product.image}}" class="card-img" alt="">
-                    </div>
+            <div class=" row detail_info_pro">
+                <div class="col-lg-6 col-md-6 detail_img_slide">
+                    <owl-carousel-o [options]="customOptions">
+                        <ng-template carouselSlide>
+                            <div class="product">
+                                <img src="{{product.image}}" class="card-img" alt="">
+                            </div>
+                        </ng-template>
+                        <ng-template carouselSlide>
+                            <div class="product">
+                                <img src="{{product.image}}" class="card-img" alt="">
+                            </div>
+                        </ng-template>
+                    </owl-carousel-o>
                 </div>
-                <div class="col-lg-6  mt-2">
+                <div class="col-lg-6 col-md-6 mt-2">
                     <div class="infor_product">
                         <div class="evaluate d-flex align-items-center">
                             <i class="fa-solid fa-star"></i>
@@ -35,18 +44,14 @@
                         distinctio laborum,
                         sint quidem hic quod accusamus omnis exercitationem? Mollitia harum quisquam recusandae tenetur
                         optio quidem?
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, id non, nemo alias sed
-                        distinctio laborum,
-                        sint quidem hic quod accusamus omnis exercitationem? Mollitia harum quisquam recusandae tenetur
-                        optio quidem?
                     </div>
                     <div class="option_user">
                         <div class="size mt-4 mb-4">
                             <div class="row d-flex align-items-center">
-                                <div class="col-lg-2 col-md-4 col-sm-2">
+                                <div class="col-lg-3 col-md-4 col-sm-3">
                                     <h5>Size :</h5>
                                 </div>
-                                <div class="col-lg-10 col-md-8 col-sm-10">
+                                <div class="col-lg-9 col-md-8 col-sm-9 size_detail">
                                     <select name="" id="" class="">
                                         <option value="S">S</option>
                                         <option value="M">M</option>
@@ -56,11 +61,11 @@
                             </div>
                         </div>
                         <div class="size mt-5 mb-4">
-                            <div class="row d-flex align-items-center">
-                                <div class="col-lg-2 col-md-4 col-sm-2">
+                            <div class="row d-flex align-items-center ">
+                                <div class="col-lg-3 col-md-4 col-sm-3">
                                     <h5>Option:</h5>
                                 </div>
-                                <div class="col-lg-10 col-md-8 col-sm-10">
+                                <div class="col-lg-9 col-md-8 col-sm-9 opt">
                                     <span>Beef</span>
                                     <span>Chese</span>
                                     <span>Salad</span>
@@ -83,7 +88,7 @@
     <div class="buyNow">
         <div class="container">
             <div class=" row justify-content-between">
-                <div class="col-lg-6 col-md-6 col-sm-6 mt-5 w_768">
+                <div class="col-lg-6 col-md-6 col-sm-12 mt-5 w_768">
                     <div class="infor_product">
                         <div class="name_fastfood">
                             <h1>Adjustable Hook &
@@ -104,7 +109,7 @@
                         <a href="">Buy Now</a>
                     </div>
                 </div>
-                <div class="col-lg-5 col-md-5 col-sm-5">
+                <div class="col-lg-5 col-md-6 col-sm-12 mt-5">
                     <div class="product_add">
                         <img src="https://cdn.shopify.com/s/files/1/0301/5648/8842/files/instagram3.jpg?v=10845364633733112642"
                             class="card-img" alt="">
@@ -116,9 +121,9 @@
     <div class="text-center latest_pro mt-5 mb-4">
         <p>Latest products</p>
     </div>
-    <div class="container mb-5">
-        <div class="row">
-            <div class="col-lg-3 col-md-3 col-sm-3">
+    <div class="container mb-5 more_item">
+        <owl-carousel-o [options]="customOptions1">
+            <ng-template carouselSlide>
                 <div class="list_product">
                     <div class="image_pro">
                         <img src="https://cdn.shopify.com/s/files/1/0301/5648/8842/products/6.2.jpg?v=1578997770"
@@ -129,8 +134,8 @@
                     <h6 class="mt-2" style="font-weight: 700;">Double Classic Burger</h6>
                     <h6 class="m-0">$ 9.880</h6>
                 </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-3">
+            </ng-template>
+            <ng-template carouselSlide>
                 <div class="list_product">
                     <div class="image_pro">
                         <img src="https://cdn.shopify.com/s/files/1/0301/5648/8842/products/8_4.jpg?v=1579052951"
@@ -141,8 +146,8 @@
                     <h6 class="mt-2" style="font-weight: 700;">Double Classic Burger</h6>
                     <h6 class="m-0">$ 9.880</h6>
                 </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-3">
+            </ng-template>
+            <ng-template carouselSlide>
                 <div class="list_product">
                     <div class="image_pro">
                         <img src="https://cdn.shopify.com/s/files/1/0301/5648/8842/products/6.5.jpg?v=1578997865"
@@ -153,8 +158,8 @@
                     <h6 class="mt-2" style="font-weight: 700;">Double Classic Burger</h6>
                     <h6 class="m-0">$ 9.880</h6>
                 </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-3">
+            </ng-template>
+            <ng-template carouselSlide>
                 <div class="list_product">
                     <div class="image_pro">
                         <img src="https://cdn.shopify.com/s/files/1/0301/5648/8842/products/7.4.jpg?v=1578998675"
@@ -165,8 +170,20 @@
                     <h6 class="mt-2" style="font-weight: 700;">Double Classic Burger</h6>
                     <h6 class="m-0">$ 9.880</h6>
                 </div>
-            </div>
-        </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="list_product">
+                    <div class="image_pro">
+                        <img src="https://cdn.shopify.com/s/files/1/0301/5648/8842/products/6.5.jpg?v=1578997865"
+                            class="card-img" alt="">
+                    </div>
+                </div>
+                <div class="text-center">
+                    <h6 class="mt-2" style="font-weight: 700;">Double Classic Burger</h6>
+                    <h6 class="m-0">$ 9.880</h6>
+                </div>
+            </ng-template>
+        </owl-carousel-o>
     </div>
 
 </body>

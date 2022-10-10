@@ -63,7 +63,10 @@ export class LoginComponent implements OnInit {
     this.formService.login(this.formData.value).subscribe((data) => {
       if (data[0]) {
         console.log(data)
-        localStorage.setItem('account', JSON.stringify(data[0]))
+        localStorage.setItem('account', JSON.stringify({
+          name: data[0].name,
+          id: data[0].id
+        }))
         Swal.fire({
           position: 'top-end',
           icon: 'success',
