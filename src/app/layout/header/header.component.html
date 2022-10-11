@@ -1,4 +1,5 @@
-<body>
+<body style="padding-bottom: 114px;">
+    <div class="position-fixed w-100" style="z-index: 1000;">
     <header class="container_custom header_main">
         <div class="header">
             <div class="menu">
@@ -63,7 +64,12 @@
                         <button class="mt-4 another" (click)="another_acc()">Use another account</button>
                     </div>
                 </div>
-                <a routerLink="/cart"><i class="fa-solid fa-bag-shopping"></i></a>
+                <div class="your_cart">
+                    <a routerLink="/cart"><i class="fa-solid fa-bag-shopping "></i></a>
+                    <div class="cart_home">
+                        <span>22</span>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -81,7 +87,12 @@
             </div>
             <div class="menu_right_1024">
                 <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
-                <a routerLink="/cart"><i class="fa-solid fa-bag-shopping"></i></a>
+                <div class="your_cart">
+                    <a routerLink="/cart"><i class="fa-solid fa-bag-shopping "></i></a>
+                    <div class="cart_home">
+                        <span>22</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -163,5 +174,5 @@
             </div>
         </div>
     </div>
-
+</div>
 </body>

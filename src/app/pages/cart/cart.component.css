@@ -8,11 +8,18 @@
 }
 
 .banner h1 {
-    border-bottom: 3px solid #fff;
     display: inline-block;
-    padding-bottom: 7px;
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
 }
-
+.banner h4{
+    font-family: 'Courier New', Courier, monospace;
+}
+.banner i{
+    font-size: 15px;
+}
 .title_top {
     border: 1px solid #cbced1;
 }

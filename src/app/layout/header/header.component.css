@@ -643,7 +643,27 @@ header {
 .user span:hover {
     color: #808080;
 }
-
+.your_cart{
+    position: relative;
+}
+.cart_home{
+    width: 20px ;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ec5942;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cart_home span{
+    font-size: 10px;
+    font-weight: 800;
+}
 @media screen and (max-width:1024px) {
     .header_main {
         display: none;
@@ -651,6 +671,24 @@ header {
 
     .header_1024 {
         display: block;
+    }
+    .cart_home{
+        width: 20px ;
+        height: 20px;
+        border-radius: 50%;
+        background-color:#ec5942;
+        color: #fff;
+        text-align: center;
+        position: absolute;
+        top: 0;
+        right: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .cart_home span{
+        font-size: 10px;
+        font-weight: 800;
     }
 
 }

@@ -7,8 +7,14 @@
     background-position: bottom;
 }
 .banner h1{
-    border-bottom: 3px solid #fff;
     display: inline-block;
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+}
+.banner h4{
+    font-family: 'Courier New', Courier, monospace;
 }
 .author img{
     border-radius: 50%;
