@@ -38,6 +38,7 @@
     position: absolute;
     right: -3%;
     opacity: 0.5;
+    transform: translateY(-50%);
 }
 
 .detail_img_slide .owl-theme .owl-prev {
@@ -48,6 +49,7 @@
     top: 50%;
     position: absolute;
     left: -3%;
+    transform: translateY(-50%);
 }
 
 .detail_img_slide .owl-theme .owl-next:hover,

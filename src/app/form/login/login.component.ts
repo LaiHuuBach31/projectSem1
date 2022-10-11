@@ -89,7 +89,7 @@ export class LoginComponent implements OnInit {
   get f(): any {
     return this.formData.controls;
   }
-
+  
   showPas() {
     let ip: any = document.getElementById('pass') as HTMLInputElement;
     if (ip.type == "password") {
