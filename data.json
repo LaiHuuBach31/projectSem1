@@ -56,7 +56,9 @@
       "id": 1.7,
       "name": "Dessert",
       "number": "13",
-      "icon": "fa-solid fa-cookie"
+      "icon": "fa-solid fa-cookie",
+      "number": "8",
+      "icon": "fa-solid fa-ice-cream"
     }
   ],
   "category_beverage": [
@@ -473,6 +475,7 @@
       "description": "Welcome, it’s great to have you here. We know that first impressions are important, so we’ve are at at at populated your new site with some initial getting started posts that will help you get familiar with everything in no time. This is the first one!…"
     }
   ],
+<<<<<<< HEAD
   "cart": [
     {}
   ],
@@ -490,4 +493,8 @@
       "id": 2
     }
   ]
+=======
+  "cart": [],
+  "account": []
+>>>>>>> c6c7f86c57ec8b97c768db8eceec28a4f0f4598f
 }

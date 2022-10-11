@@ -9,12 +9,19 @@
 }
 .banner .title-page h2{
     display: inline-block;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.banner h2 {
+    font-family: 'Courier New', Courier, monospace;
     font-size: 60px;
     font-weight: 700 !important;
     text-transform: uppercase;
     font-family: 'Courier New', Courier, monospace !important;
     color: #fff;
 }
+
 .container-v2 {
     max-width: 1430px;
 }
@@ -25,7 +32,7 @@
 
 /* .banner .container-v2 .title-page h2::before {
     content: "";
-    height: 1px;
+    height: 2px;
     width: 74px;
     position: absolute;
     left: 50%;

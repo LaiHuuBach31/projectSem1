@@ -151,6 +151,32 @@ select {
     font-family: cursive;
 }
 
+.input button {
+    width: 45px;
+    padding: 7px;
+    border: none;
+    border: 1px solid #111;
+    border-radius: 0;
+    font-size: 17px;
+}
+
+.input input {
+    width: 45px;
+    padding: 7px;
+    border: none;
+    margin: 0 10px;
+    text-align: center;
+    border-bottom: 1px solid #111;
+}
+
+
+.input .left_ip {
+    margin-right: -3px;
+}
+
+.input .right_ip {
+    margin-left: -3px;
+}
 
 @media screen and (max-width:2560px) {
     .window_768 {
@@ -158,9 +184,21 @@ select {
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:991.5px) {
+    .container_custom {
+        padding: 0 30px;
+    }
+
     .banner {
-        padding: 40px 0px;
+        padding: 70px 0px;
+    }
+
+    .detail_info_pro {
+        align-items: flex-start;
+    }
+
+    select {
+        width: 35%;
     }
 
     .w_768 {
@@ -170,10 +208,57 @@ select {
     .window_768 {
         display: block;
     }
+
+    .name_fastfood h1 {
+        font-size: 30px;
+    }
+
+    .size h5 {
+        font-size: 18px;
+    }
+
+    .describe_product {
+        font-size: 15px;
+    }
+
+    .add_information p {
+        font-size: 16px;
+    }
+
+    .add_information p:first-child,
+    p:last-child {
+        display: none;
+    }
+
 }
 
-@media screen and (max-width:426px) {
+.list_product {
+    padding: 0 10px;
+}
+
+.more_item {
+    position: relative;
+}
+
+@media screen and (max-width:575.5px) {
     .window_768 {
         display: none;
     }
+
+    .size_detail {
+        margin-top: 20px;
+    }
+
+    select {
+        width: 40%;
+    }
+
+    .container_custom {
+        padding: 0 20px;
+    }
+
+    .opt {
+        margin-top: 30px;
+    }
+
 }

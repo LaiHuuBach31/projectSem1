@@ -64,19 +64,23 @@ export class ShopComponent implements OnInit {
     // console.log(data)
   }
   filter_general() {
-    let result: any = []
-    result = this.filter_food(this.datas)
-    result = this.filter_price(result)
-    this.product = result
-    console.log(result)
+
+    if (this.filter_price(this.datas) == this.datas && this.filter_food(this.datas) == this.datas) {
+      this.PageChange(this.page)
+      return this.product
+    } else {
+      let result: any = []
+      result = this.filter_food(this.datas)
+      result = this.filter_price(result)
+      this.product = result
+      console.log(result)
+    }
   }
   clear_all() {
     this.max_price = '';
     this.min_price = ''
     this.id = ''
-    this.productService.getAllProduct().subscribe((data) => {
-      this.product = data
-    })
+    this.PageChange(this.page)
     console.log(this.product)
 
   }
