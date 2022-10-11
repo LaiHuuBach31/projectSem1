@@ -475,7 +475,6 @@
       "description": "Welcome, it’s great to have you here. We know that first impressions are important, so we’ve are at at at populated your new site with some initial getting started posts that will help you get familiar with everything in no time. This is the first one!…"
     }
   ],
-<<<<<<< HEAD
   "cart": [
     {}
   ],
@@ -492,9 +491,7 @@
       "password": "123456",
       "id": 2
     }
-  ]
-=======
+  ],
   "cart": [],
   "account": []
->>>>>>> c6c7f86c57ec8b97c768db8eceec28a4f0f4598f
 }
