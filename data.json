@@ -55,8 +55,6 @@
     {
       "id": 1.7,
       "name": "Dessert",
-      "number": "13",
-      "icon": "fa-solid fa-cookie",
       "number": "8",
       "icon": "fa-solid fa-ice-cream"
     }
@@ -476,7 +474,19 @@
     }
   ],
   "cart": [
-    {}
+    {
+      "id_product": 1,
+      "id_category": 2,
+      "id_user": 2,
+      "name_user": "Nguyen",
+      "image": "https://demo2wpopal.b-cdn.net/poco/wp-content/uploads/2020/08/54.1-450x450.png",
+      "name": "Water Bottle",
+      "price": 10.18,
+      "quantity": 15,
+      "size": "S",
+      "totalEachitem": 152.7,
+      "id": 1
+    }
   ],
   "account": [
     {
@@ -491,7 +501,5 @@
       "password": "123456",
       "id": 2
     }
-  ],
-  "cart": [],
-  "account": []
+  ]
 }
