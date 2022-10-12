@@ -3,14 +3,23 @@
     /* height: 310px; */
     background-size: cover;
     background-position: center;
-    padding: 60px 0;
+    background-repeat: no-repeat;
+    padding: 80px 0;
+    text-align: center;  
+}
+.banner .title-page h2{
+    display: inline-block;
+    padding: 0px 0;
     text-align: center;
 }
 
 .banner h2 {
     font-family: 'Courier New', Courier, monospace;
     font-size: 60px;
-    font-weight: 700;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace !important;
+    color: #fff;
 }
 
 .container-v2 {
@@ -18,14 +27,10 @@
 }
 
 .banner .container-v2 .title-page h2 {
-    font-family: Habibi;
-    font-size: 60px;
-    font-weight: 300;
-    color: #fff;
     position: relative;
 }
 
-.banner .container-v2 .title-page h2::before {
+/* .banner .container-v2 .title-page h2::before {
     content: "";
     height: 2px;
     width: 74px;
@@ -34,17 +39,13 @@
     bottom: -15%;
     transform: translate(-50%);
     background: #ffffff;
-}
-
-.page {
-    padding: 30px 0;
-}
+} */
 
 .page a,
 strong {
     text-transform: uppercase;
     color: #fff;
-    font-family: Habibi;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 14px;
     font-weight: 600;
     text-decoration: none;
@@ -59,7 +60,9 @@ strong {
     padding-top: 66px;
     padding-bottom: 90px;
 }
-
+/* .intro_detail{
+    padding: 0 !important;
+} */
 .aboutus-pages .about-introduce .intro_detail,
 .intro-image {
     padding-bottom: 70px;

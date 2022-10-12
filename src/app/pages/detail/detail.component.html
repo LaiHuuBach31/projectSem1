@@ -1,9 +1,21 @@
 <app-header></app-header>
 
 <body>
-    <div class="banner text-center">
+    <!-- <div class="banner text-center">
         <h1 class="">Chilie Fried</h1>
         <h4>Home > Shop > Chilie Fried</h4>
+    </div> -->
+    <div class="banner">
+        <div class="container container-v2">
+            <div class="title-page">
+                <h2>{{product.name}}</h2>
+            </div>
+            <div class="page">
+                <a href="/">home <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                <strong>Shop</strong>
+                <a><i class="fa fa-angle-right" aria-hidden="true"></i>{{product.name}}</a>
+            </div>
+        </div>
     </div>
     <div class=" detail_product mt-5">
         <div class="container_custom">

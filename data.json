@@ -473,6 +473,33 @@
       "description": "Welcome, it’s great to have you here. We know that first impressions are important, so we’ve are at at at populated your new site with some initial getting started posts that will help you get familiar with everything in no time. This is the first one!…"
     }
   ],
-  "cart": [],
-  "account": []
+  "cart": [
+    {
+      "id_product": 1,
+      "id_category": 2,
+      "id_user": 2,
+      "name_user": "Nguyen",
+      "image": "https://demo2wpopal.b-cdn.net/poco/wp-content/uploads/2020/08/54.1-450x450.png",
+      "name": "Water Bottle",
+      "price": 10.18,
+      "quantity": 15,
+      "size": "S",
+      "totalEachitem": 152.7,
+      "id": 1
+    }
+  ],
+  "account": [
+    {
+      "name": "duy",
+      "email": "duy@gmail.com",
+      "password": "123456",
+      "id": 1
+    },
+    {
+      "name": "Nguyen",
+      "email": "nguyen2@gmail.com",
+      "password": "123456",
+      "id": 2
+    }
+  ]
 }

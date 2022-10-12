@@ -6,8 +6,17 @@
     padding: 60px 0;
     text-align: center;
 }
-
-.banner h2 {
+.banner h2{
+    display: inline-block;
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+}
+.banner h4{
+    font-family: 'Courier New', Courier, monospace;
+}
+.banner h2{
     font-family: 'Courier New', Courier, monospace;
     font-size: 60px;
     font-weight: 700;
@@ -18,14 +27,15 @@
 }
 
 .banner .container-v2 .title-page h2 {
-    font-family: Habibi;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 60px;
-    font-weight: 300;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace !important;
     color: #fff;
-    position: relative;
 }
 
-.banner .container-v2 .title-page h2::before {
+/* .banner .container-v2 .title-page h2::before {
     content: "";
     height: 2px;
     width: 74px;
@@ -34,8 +44,7 @@
     bottom: -15%;
     transform: translate(-50%);
     background: #ffffff;
-}
-
+} */
 .page {
     padding: 30px 0;
 }
