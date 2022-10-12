@@ -469,6 +469,44 @@
     cursor: pointer;
 }
 
+
+.address_filter {
+    text-align: right;
+    padding: 0 25px;
+    margin-top: 30px;
+}
+
+.title_item_click {
+    color: #ea8025;
+}
+
+.btn_filter {
+    padding: 8px;
+    background-color: #ea8025;
+    border: none;
+    width: 50%;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    transition: .4s;
+    border-radius: 7px;
+}
+
+.btn_filter:hover {
+    background-color: #5f8e3e;
+    transition: .4s;
+}
+
+.max_min_value {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    font-size: 17px;
+    color: #808080;
+}
+
 @media screen and (max-width:1024px) {
     .around_item {
         padding: 0 10px;

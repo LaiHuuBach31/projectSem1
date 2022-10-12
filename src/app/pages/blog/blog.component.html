@@ -14,7 +14,7 @@
     <div class="container mt-4" style="position: relative;">
         <div class="row">
             <div class="col-lg-9 col-md-9 col-sm-9">
-                <div class="blog" *ngFor="let item of pages">
+                <div class="blog" *ngFor="let item of blog">
                     <div class="row">
                         <div class="col-lg-3 col-md-3 col-sm-3">
                             <div class="image_blog">
@@ -29,8 +29,7 @@
                                 <div class="data_blog d-flex  align-items-center justify-content-between">
                                     <h6 class="mt-3 mb-3">{{item.time}}</h6>
                                     <div class="author d-flex align-items-center ">
-                                        <img src="{{item.author_img}}"
-                                            width="30px" height="30px" alt="">
+                                        <img src="{{item.author_img}}" width="30px" height="30px" alt="">
                                         <p class="m-0">{{item.author}}</p>
                                     </div>
                                 </div>
@@ -44,10 +43,8 @@
 
                 <div class="next_blog mt-3 mb-3">
                     <div class="number_page d-flex justify-content-center">
-                        <div class="number_one" (click)="Pages(1)">1</div>
-                        <div class="number_one" (click)="Pages(2)">2</div>
-                        <div class="number_one" (click)="Pages(3)">3</div>
-                        <!-- <div class="number_one" (click)="Pages(4)">Next...</div> -->
+                        <div class="number_one" *ngFor="let item of numberPage"
+                            [class.active_change_page]="pages == item" (click)="Pages(item)">{{item}}</div>
                     </div>
                 </div>
             </div>

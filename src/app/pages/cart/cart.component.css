@@ -4,13 +4,15 @@
     background-size: cover;
     background-position: center;
     padding: 60px 0;
-    text-align: center;  
+    text-align: center;
 }
-.banner h2{
+
+.banner h2 {
     font-family: 'Courier New', Courier, monospace;
     font-size: 60px;
     font-weight: 700;
 }
+
 .container-v2 {
     max-width: 1430px;
 }
@@ -131,7 +133,7 @@ strong {
 }
 
 .update:hover button {
-    background-color: #ea8025;
+    background-color: #f0002f;
     transition: 0.5s;
 }
 

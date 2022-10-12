@@ -473,6 +473,72 @@
       "description": "Welcome, it’s great to have you here. We know that first impressions are important, so we’ve are at at at populated your new site with some initial getting started posts that will help you get familiar with everything in no time. This is the first one!…"
     }
   ],
-  "cart": [],
+  "cart": [
+    {
+      "id_product": 14,
+      "id_category": 1,
+      "id_user": 1,
+      "name_user": "duy",
+      "image": "https://demo2wpopal.b-cdn.net/poco/wp-content/uploads/2020/08/49-1-600x600.png",
+      "name": "Tagliatelle Molto",
+      "price": 15.61,
+      "quantity": 6,
+      "size": "S",
+      "totalEachitem": 46.83,
+      "id": 1
+    },
+    {
+      "id_product": 2,
+      "id_category": 1,
+      "id_user": 1,
+      "name_user": "duy",
+      "image": "https://demo2wpopal.b-cdn.net/poco/wp-content/uploads/2020/08/8-1-600x600.png",
+      "name": "Chicken Burger",
+      "price": 16.75,
+      "quantity": 3,
+      "size": "M",
+      "totalEachitem": 50.25,
+      "id": 2
+    },
+    {
+      "id_product": 2,
+      "id_category": 1,
+      "id_user": 1,
+      "name_user": "duy",
+      "image": "https://demo2wpopal.b-cdn.net/poco/wp-content/uploads/2020/08/8-1-600x600.png",
+      "name": "Chicken Burger",
+      "price": 16.75,
+      "quantity": 2,
+      "size": "L",
+      "totalEachitem": 33.5,
+      "id": 3
+    },
+    {
+      "id_product": 2,
+      "id_category": 1,
+      "id_user": 1,
+      "name_user": "duy",
+      "image": "https://demo2wpopal.b-cdn.net/poco/wp-content/uploads/2020/08/8-1-600x600.png",
+      "name": "Chicken Burger",
+      "price": 16.75,
+      "quantity": 10,
+      "size": "S",
+      "totalEachitem": 167.5,
+      "id": 4
+    },
+    {
+      "id_product": 6,
+      "id_category": 2,
+      "id_user": 1,
+      "name_user": "duy",
+      "image": "https://demo2wpopal.b-cdn.net/poco/wp-content/uploads/2020/08/4-1-600x600.png",
+      "name": "Black Coffee",
+      "price": 11.76,
+      "quantity": 3,
+      "size": "M",
+      "totalEachitem": 35.28,
+      "id": 5
+    }
+  ],
   "account": []
 }
