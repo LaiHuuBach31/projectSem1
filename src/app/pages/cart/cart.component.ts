@@ -33,14 +33,14 @@ export class CartComponent implements OnInit {
 
   }
   removePro(id: number) {
-    if (confirm('Are you sure'))
+    if (confirm('Are you sure')) {
       this.cartService.removeCart(id).subscribe((data) => { })
-    this.getCartPro()
-
+      this.getCartPro()
+    }
   }
   removeAll() {
     if (confirm('Are you really sure?')) {
-      
+
     }
 
   }
