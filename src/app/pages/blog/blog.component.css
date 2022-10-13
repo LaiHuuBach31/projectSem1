@@ -138,3 +138,8 @@ strong {
     background-color: #ea8025;
     color: #fff !important;
 }
+
+
+.image_blog img {
+    object-fit: cover;
+}

@@ -39,10 +39,7 @@ export class CartComponent implements OnInit {
     }
   }
   removeAll() {
-    if (confirm('Are you really sure?')) {
-
-    }
-
+    location.reload()
   }
 
 

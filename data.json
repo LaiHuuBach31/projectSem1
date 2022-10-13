@@ -535,19 +535,6 @@
       "name": "Molto Tagliatelle",
       "price": 8,
       "quantity": 2,
-      "size": "M",
-      "totalEachitem": 16,
-      "id": 5
-    },
-    {
-      "id_product": 7,
-      "id_category": 1,
-      "id_user": 1,
-      "name_user": "duy",
-      "image": "https://demo2wpopal.b-cdn.net/poco/wp-content/uploads/2020/08/29-1-600x600.png",
-      "name": "Molto Tagliatelle",
-      "price": 8,
-      "quantity": 2,
       "size": "L",
       "totalEachitem": 16,
       "id": 6
