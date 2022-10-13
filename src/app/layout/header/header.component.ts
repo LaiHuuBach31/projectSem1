@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { CartService } from 'src/app/service/cart.service';
 import { HomeService } from 'src/app/service/home.service';
 
 @Component({
@@ -13,46 +14,57 @@ export class HeaderComponent implements OnInit {
     cate_beverage: any
     cate_combo: any
     user: any
-
     catebyid1: any
     catebyid2: any
-    constructor(private homeService: HomeService, private router: ActivatedRoute, private route: Router) { }
+    quantity_item: any
+    constructor(private router: ActivatedRoute, private route: Router, private cartService: CartService) { }
 
     ngOnInit(): void {
-        this.homeService.getCategoriesMain().subscribe((data) => {
+        this.cartService.getCategoriesMain().subscribe((data) => {
             this.cate_main = data
         })
-        this.homeService.getCategoriesFood().subscribe((data) => {
+        this.cartService.getCategoriesFood().subscribe((data) => {
             this.cate_food = data
         })
-        this.homeService.getCategoriesBeverage().subscribe((data) => {
+        this.cartService.getCategoriesBeverage().subscribe((data) => {
             this.cate_beverage = data
         })
-        this.homeService.getCategoriesCombo().subscribe((data) => {
+        this.cartService.getCategoriesCombo().subscribe((data) => {
             this.cate_combo = data
         })
-        this.homeService.getCategoryById1().subscribe((data) => {
+        this.cartService.getCategoryById1().subscribe((data) => {
             this.catebyid1 = data
             console.log(this.catebyid1)
         })
-        this.homeService.getCategoryById2().subscribe((data) => {
+        this.cartService.getCategoryById2().subscribe((data) => {
             this.catebyid2 = data
         })
+
+
+        this.cartService.getAllPro().subscribe((data) => { })
         let data: any = localStorage.getItem('account')
         this.user = JSON.parse(data)
+        // alert('a')
+        this.length()
     }
     sign_out() {
         localStorage.removeItem('account')
         let data: any = localStorage.getItem('account')
         this.user = JSON.parse(data)
+        this.user = null
     }
     another_acc() {
         localStorage.removeItem('account')
         let data: any = localStorage.getItem('account')
         this.user = JSON.parse(data)
         this.route.navigate(['/login'])
+        this.user = null
     }
-
+    length() {
+        this.cartService.lengthCart.subscribe(data => {
+            this.quantity_item = data
+        })
+    }
 
 
     check: any = true

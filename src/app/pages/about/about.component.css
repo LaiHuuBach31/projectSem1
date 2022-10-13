@@ -5,9 +5,10 @@
     background-position: center;
     background-repeat: no-repeat;
     padding: 80px 0;
-    text-align: center;  
+    text-align: center;
 }
-.banner .title-page h2{
+
+.banner .title-page h2 {
     display: inline-block;
     padding: 0px 0;
     text-align: center;
@@ -60,6 +61,7 @@ strong {
     padding-top: 66px;
     padding-bottom: 90px;
 }
+
 /* .intro_detail{
     padding: 0 !important;
 } */

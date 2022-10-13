@@ -67,6 +67,8 @@ export class CartComponent implements OnInit {
           console.log(data)
         })
         this.getCartPro()
+      } else {
+        this.removePro(id)
       }
     } else {
       quantily.value = Number(quantily.value) + 1
@@ -92,7 +94,8 @@ export class CartComponent implements OnInit {
         datas.totalEachitem = Number(datas.quantity * datas.price)
         this.cartService.putCart(datas).subscribe(() => { })
         this.getCartPro()
-
+      } else {
+        this.removePro(id)
       }
     } else {
       quantily_768.value = Number(quantily_768.value) + 1

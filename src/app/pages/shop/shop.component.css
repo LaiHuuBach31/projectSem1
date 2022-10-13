@@ -452,16 +452,35 @@
     z-index: 3;
     top: 5%;
     right: 12%;
+    opacity: 0;
+    background-color: #fff;
+    width: 43px;
+    height: 43px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 50px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.around_item:hover .favorite {
+    opacity: 1;
+    transition: .5s;
+}
+
+.favorite:hover {
+    background-color: #ea8025;
+    transition: .5s;
+}
+
+.favorite:hover i {
+    color: #fff;
 }
 
 .favorite i {
     font-size: 23px;
     cursor: pointer;
-    color: #e5e5e5;
-}
-
-.favorite:hover i {
-    color: red;
+    color: #ea8025;
 }
 
 .img_best_deal_768 {
