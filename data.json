@@ -475,19 +475,6 @@
   ],
   "cart": [
     {
-      "id_product": 1,
-      "id_category": 2,
-      "id_user": 2,
-      "name_user": "Nguyen",
-      "image": "https://demo2wpopal.b-cdn.net/poco/wp-content/uploads/2020/08/54.1-450x450.png",
-      "name": "Water Bottle",
-      "price": 10.18,
-      "quantity": 15,
-      "size": "S",
-      "totalEachitem": 152.7,
-      "id": 1
-    },
-    {
       "id_product": 2,
       "id_category": 1,
       "id_user": 1,
@@ -590,6 +577,32 @@
       "size": "L",
       "totalEachitem": 18.26,
       "id": 9
+    },
+    {
+      "id_product": 3,
+      "id_category": 1,
+      "id_user": 2,
+      "name_user": "Nguyen",
+      "image": "https://demo2wpopal.b-cdn.net/poco/wp-content/uploads/2020/08/9-1-600x600.png",
+      "name": "Chicken Hawaii",
+      "price": 14.49,
+      "quantity": 1,
+      "size": "S",
+      "totalEachitem": 14.49,
+      "id": 10
+    },
+    {
+      "id_product": 1,
+      "id_category": 2,
+      "id_user": 2,
+      "name_user": "Nguyen",
+      "image": "https://demo2wpopal.b-cdn.net/poco/wp-content/uploads/2020/08/54.1-450x450.png",
+      "name": "Water Bottle",
+      "price": 10.18,
+      "quantity": 1,
+      "size": "S",
+      "totalEachitem": 10.18,
+      "id": 11
     }
   ],
   "account": [
@@ -610,6 +623,18 @@
       "email": "cheese@gmail.com",
       "password": "123456",
       "id": 3
+    },
+    {
+      "name": "Nguyen",
+      "email": "nguyen1@gmai.com",
+      "password": "123456",
+      "id": 4
+    },
+    {
+      "name": "Nguyen Vu ",
+      "email": "nguyenvu@gmail.com",
+      "password": "123456",
+      "id": 5
     }
   ]
 }

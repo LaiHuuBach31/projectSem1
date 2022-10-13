@@ -138,3 +138,6 @@ strong {
     background-color: #ea8025;
     color: #fff !important;
 }
+@media screen and(max-width: 426px){
+    
+}
