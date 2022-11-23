@@ -138,6 +138,13 @@ strong {
     background-color: #ea8025;
     color: #fff !important;
 }
+<<<<<<< HEAD
 @media screen and(max-width: 426px){
     
+=======
+
+
+.image_blog img {
+    object-fit: cover;
+>>>>>>> 18d819470b279a36298fdf5943ce2710b7b2d9d6
 }

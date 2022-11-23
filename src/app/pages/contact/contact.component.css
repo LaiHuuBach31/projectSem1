@@ -1,14 +1,17 @@
 main {
     font-family: Habibi;
 }
-.map{
+
+.map {
     width: 100%;
     height: 400px;
 }
+
 p {
     font-size: medium;
     color: #a8a8a8;
 }
+
 .banner {
     background-image: url(https://cdn.shopify.com/s/files/1/0301/5648/8842/files/breadcrumb.jpg?v=1579081409);
     /* height: 310px; */
@@ -18,10 +21,12 @@ p {
     text-align: center;
     background-repeat: no-repeat;
 }
+
 .container-v2 {
     max-width: 1430px;
 }
-.banner .title-page h2{
+
+.banner .title-page h2 {
     display: inline-block;
     font-size: 60px;
     font-weight: 700 !important;
@@ -29,6 +34,7 @@ p {
     font-family: 'Courier New', Courier, monospace !important;
     color: #fff;
 }
+
 /* .banner .container-v2  .title-page h2 {
     font-family: Habibi;
     font-size: 60px;
@@ -49,7 +55,8 @@ p {
 /* .page {
     padding: 30px 0;
 } */
-.page a, strong {
+.page a,
+strong {
     text-transform: uppercase;
     color: #fff;
     font-family: Habibi;
@@ -58,15 +65,19 @@ p {
     text-decoration: none;
     background-color: transparent;
 }
-.page a i{
+
+.page a i {
     padding: 0 10px;
 }
-.gg-map{
-    padding: 0 100px ;
+
+.gg-map {
+    padding: 0 100px;
 }
+
 .content {
     padding: 50px 0 60px;
 }
+
 .content .title_desc {
     font-size: 40px;
     color: #000;
@@ -76,7 +87,7 @@ p {
 }
 
 .form {
-    padding: 0 0 30px  0;
+    padding: 0 0 30px 0;
 }
 
 .form-group {
@@ -89,30 +100,38 @@ p {
     padding: 10px;
     border-radius: 0;
 }
-.nut{
+
+.nut {
     background-color: #000;
     color: white;
     padding: 10px 20px;
     border-radius: 0;
 }
-.chu{
+
+.chu {
     color: #be9667;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 750;
 }
+
 @media (max-width: 500px) {
     .banner {
         padding: 50px 0;
     }
-    .banner .container-v2  .title-page h2 {
-        font-size: 35px;
+
+    .banner .container-v2 .title-page h2 {
+        font-size: 45px;
     }
-    .page a, strong {
+
+    .page a,
+    strong {
         font-size: 11px;
     }
+
     .content .title_desc {
         font-size: 20px;
     }
+
     .gg-map {
         padding: 0 15px;
     }
