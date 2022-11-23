@@ -40,10 +40,6 @@ export class CartComponent implements OnInit {
   }
   removeAll() {
     location.reload()
-<<<<<<< HEAD
-
-=======
->>>>>>> 18d819470b279a36298fdf5943ce2710b7b2d9d6
   }
 
 
