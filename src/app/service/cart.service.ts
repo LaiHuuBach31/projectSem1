@@ -62,9 +62,13 @@ export class CartService {
   getAllPro(): Observable<any> {
     let dataUser: any = localStorage.getItem('account')
     let user = JSON.parse(dataUser)
-    this.getCart(user.id).subscribe((data) => {
+    user && ( this.getCart(user.id).subscribe((data) => {
       this.lengthCart.next(data.length)
-    })
+    }))
     return this.http.get<any>(`${url}/product`)
+  }
+  removeAll(data:any):Observable<any>{
+
+    return this.http.put<any>(`${url}/cart`,data)
   }
 }

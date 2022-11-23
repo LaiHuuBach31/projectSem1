@@ -10,7 +10,9 @@ import Swal from 'sweetalert2';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
+
   listAccount: any
+
   formData = new FormGroup({
     name: new FormControl('', [Validators.required, Validators.minLength(3)]),
     email: new FormControl('', [Validators.required, Validators.email]),
@@ -18,7 +20,9 @@ export class RegisterComponent implements OnInit {
   })
 
   constructor(private router: Router, private formService: FormServiceService) { }
+
   cart:any = []
+
   ngOnInit(): void {
     this.formService.getAllAccount().subscribe((data) => {
       this.listAccount = data
@@ -28,15 +32,14 @@ export class RegisterComponent implements OnInit {
 
   onSubmit() {
     if (this.formData.valid) {
-
-      console.log(this.listAccount)
+      // console.log(this.listAccount)
       let conflictAcc = this.listAccount.find((element: any) => {
         return this.formData.value.email == element.email
       })
       console.log(conflictAcc);
       if (!conflictAcc) {
         this.formService.createAcc(this.formData.value).subscribe((data) => {
-          this.cart.push()
+          // this.cart.push()
         })
         Swal.fire({
           position: 'top-end',
@@ -47,7 +50,7 @@ export class RegisterComponent implements OnInit {
         })
         this.router.navigate(['/login'])
       } else {
-        alert('Username is already taken. Try another name !')
+        alert('Email is already taken. Try another name !')
         location.reload()
       }
     } else {

@@ -16,6 +16,6 @@ export class BlogService {
   }
 
   getAllPage(number:any):Observable<any>{
-    return this.http.get<any>(`${urlApiBlog}/blog?_page=${number}&_limit=5`)
+    return this.http.get<any>(`${urlApiBlog}/blog?_page=${number}&_limit=2`)
   }
 }

@@ -125,8 +125,8 @@
       "id_category_child": 1.1,
       "reviewer": 51,
       "image": "https://demo2wpopal.b-cdn.net/poco/wp-content/uploads/2020/08/9-1-600x600.png",
-      "image1": "",
-      "image2": ""
+      "image1": "https://demo2wpopal.b-cdn.net/poco/wp-content/uploads/2020/08/8-1-600x600.png",
+      "image2": "https://demo2wpopal.b-cdn.net/poco/wp-content/uploads/2020/08/11-1-600x600.png"
     },
     {
       "id": 4,
@@ -475,71 +475,6 @@
   ],
   "cart": [
     {
-      "id_product": 2,
-      "id_category": 1,
-      "id_user": 1,
-      "name_user": "duy",
-      "image": "https://demo2wpopal.b-cdn.net/poco/wp-content/uploads/2020/08/8-1-600x600.png",
-      "name": "Chicken Burger",
-      "price": 16.75,
-      "quantity": 1,
-      "size": "S",
-      "totalEachitem": 16.75,
-      "id": 2
-    },
-    {
-      "id_product": 2,
-      "id_category": 1,
-      "id_user": 1,
-      "name_user": "duy",
-      "image": "https://demo2wpopal.b-cdn.net/poco/wp-content/uploads/2020/08/8-1-600x600.png",
-      "name": "Chicken Burger",
-      "price": 16.75,
-      "quantity": 1,
-      "size": "M",
-      "totalEachitem": 16.75,
-      "id": 3
-    },
-    {
-      "id_product": 7,
-      "id_category": 1,
-      "id_user": 1,
-      "name_user": "duy",
-      "image": "https://demo2wpopal.b-cdn.net/poco/wp-content/uploads/2020/08/29-1-600x600.png",
-      "name": "Molto Tagliatelle",
-      "price": 8,
-      "quantity": 3,
-      "size": "S",
-      "totalEachitem": 8,
-      "id": 4
-    },
-    {
-      "id_product": 7,
-      "id_category": 1,
-      "id_user": 1,
-      "name_user": "duy",
-      "image": "https://demo2wpopal.b-cdn.net/poco/wp-content/uploads/2020/08/29-1-600x600.png",
-      "name": "Molto Tagliatelle",
-      "price": 8,
-      "quantity": 2,
-      "size": "M",
-      "totalEachitem": 16,
-      "id": 5
-    },
-    {
-      "id_product": 7,
-      "id_category": 1,
-      "id_user": 1,
-      "name_user": "duy",
-      "image": "https://demo2wpopal.b-cdn.net/poco/wp-content/uploads/2020/08/29-1-600x600.png",
-      "name": "Molto Tagliatelle",
-      "price": 8,
-      "quantity": 2,
-      "size": "L",
-      "totalEachitem": 16,
-      "id": 6
-    },
-    {
       "id_product": 5,
       "id_category": 1,
       "id_user": 3,
@@ -603,6 +538,165 @@
       "size": "S",
       "totalEachitem": 10.18,
       "id": 11
+    },
+    {
+      "id_product": 8,
+      "id_category": 2,
+      "id_user": 5,
+      "name_user": "Nguyen Vu ",
+      "image": "https://demo2wpopal.b-cdn.net/poco/wp-content/uploads/2020/08/28-1-600x600.png",
+      "name": "Lemonades Drink",
+      "price": 18.26,
+      "quantity": 9,
+      "size": "S",
+      "totalEachitem": 164.34,
+      "id": 12
+    },
+    {
+      "id_product": 24,
+      "id_category": 1,
+      "id_user": 1,
+      "name_user": "duy",
+      "image": "https://static.wixstatic.com/media/d00dec_79d2cc9667a44734926a7eb67afa6ca3~mv2.png/v1/fill/w_309,h_309,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Grilled-Iberian.png",
+      "name": "Fried chicken",
+      "price": 50,
+      "quantity": 6,
+      "size": "S",
+      "totalEachitem": 300,
+      "id": 13
+    },
+    {
+      "id_product": 2,
+      "id_category": 1,
+      "id_user": 1,
+      "name_user": "duy",
+      "image": "https://demo2wpopal.b-cdn.net/poco/wp-content/uploads/2020/08/8-1-600x600.png",
+      "name": "Chicken Burger",
+      "price": 16.75,
+      "quantity": 5,
+      "size": "M",
+      "totalEachitem": 83.75,
+      "id": 14
+    },
+    {
+      "id_product": 1,
+      "id_category": 2,
+      "image": "https://demo2wpopal.b-cdn.net/poco/wp-content/uploads/2020/08/54.1-450x450.png",
+      "name": "Water Bottle",
+      "price": 10.18,
+      "quantity": 1,
+      "size": "M",
+      "totalEachitem": 10.18,
+      "id": 15
+    },
+    {
+      "id_product": 1,
+      "id_category": 2,
+      "image": "https://demo2wpopal.b-cdn.net/poco/wp-content/uploads/2020/08/54.1-450x450.png",
+      "name": "Water Bottle",
+      "price": 10.18,
+      "quantity": 2,
+      "size": "M",
+      "totalEachitem": 20.36,
+      "id": 16
+    },
+    {
+      "id_product": 1,
+      "id_category": 2,
+      "image": "https://demo2wpopal.b-cdn.net/poco/wp-content/uploads/2020/08/54.1-450x450.png",
+      "name": "Water Bottle",
+      "price": 10.18,
+      "quantity": 7,
+      "size": "M",
+      "totalEachitem": 71.25999999999999,
+      "id": 17
+    },
+    {
+      "id_product": 1,
+      "id_category": 2,
+      "image": "https://demo2wpopal.b-cdn.net/poco/wp-content/uploads/2020/08/54.1-450x450.png",
+      "name": "Water Bottle",
+      "price": 10.18,
+      "quantity": 7,
+      "size": "M",
+      "totalEachitem": 71.25999999999999,
+      "id": 18
+    },
+    {
+      "id_product": 1,
+      "id_category": 2,
+      "image": "https://demo2wpopal.b-cdn.net/poco/wp-content/uploads/2020/08/54.1-450x450.png",
+      "name": "Water Bottle",
+      "price": 10.18,
+      "quantity": 7,
+      "size": "M",
+      "totalEachitem": 71.25999999999999,
+      "id": 19
+    },
+    {
+      "id_product": 1,
+      "id_category": 2,
+      "id_user": 7,
+      "name_user": "hiêu",
+      "image": "https://demo2wpopal.b-cdn.net/poco/wp-content/uploads/2020/08/54.1-450x450.png",
+      "name": "Water Bottle",
+      "price": 10.18,
+      "quantity": 5,
+      "size": "S",
+      "totalEachitem": 50.9,
+      "id": 20
+    },
+    {
+      "id_product": 7,
+      "id_category": 1,
+      "id_user": 7,
+      "name_user": "hiêu",
+      "image": "https://demo2wpopal.b-cdn.net/poco/wp-content/uploads/2020/08/29-1-600x600.png",
+      "name": "Molto Tagliatelle",
+      "price": 8,
+      "quantity": 1,
+      "size": "L",
+      "totalEachitem": 8,
+      "id": 21
+    },
+    {
+      "id_product": 5,
+      "id_category": 1,
+      "id_user": 7,
+      "name_user": "hiêu",
+      "image": "https://demo2wpopal.b-cdn.net/poco/wp-content/uploads/2020/08/10-1.png",
+      "name": "Chocolate cake",
+      "price": 11,
+      "quantity": 2,
+      "size": "M",
+      "totalEachitem": 11,
+      "id": 22
+    },
+    {
+      "id_product": 5,
+      "id_category": 1,
+      "id_user": 7,
+      "name_user": "hiêu",
+      "image": "https://demo2wpopal.b-cdn.net/poco/wp-content/uploads/2020/08/10-1.png",
+      "name": "Chocolate cake",
+      "price": 11,
+      "quantity": 1,
+      "size": "S",
+      "totalEachitem": 11,
+      "id": 23
+    },
+    {
+      "id_product": 8,
+      "id_category": 2,
+      "id_user": 6,
+      "name_user": "bach",
+      "image": "https://demo2wpopal.b-cdn.net/poco/wp-content/uploads/2020/08/28-1-600x600.png",
+      "name": "Lemonades Drink",
+      "price": 18.26,
+      "quantity": 1,
+      "size": "S",
+      "totalEachitem": 18.26,
+      "id": 24
     }
   ],
   "account": [
@@ -635,6 +729,18 @@
       "email": "nguyenvu@gmail.com",
       "password": "123456",
       "id": 5
+    },
+    {
+      "name": "bach",
+      "email": "bach@gmail.com",
+      "password": "123456",
+      "id": 6
+    },
+    {
+      "name": "hiêu",
+      "email": "hieu@gmail.com",
+      "password": "123456",
+      "id": 7
     }
   ]
 }

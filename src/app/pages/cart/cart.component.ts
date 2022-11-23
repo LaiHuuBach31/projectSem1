@@ -11,7 +11,7 @@ import { CartService } from 'src/app/service/cart.service';
 export class CartComponent implements OnInit {
   user: any
   cartPro: any
-  total: any
+  total: any = 0
   constructor(private cartService: CartService, private route: Router, private router: ActivatedRoute) { }
 
   ngOnInit(): void {
@@ -22,14 +22,14 @@ export class CartComponent implements OnInit {
   }
 
   getCartPro() {
-    this.cartService.getCart(this.user.id).subscribe((data) => {
+  this.user  && ( this.cartService.getCart(this.user.id).subscribe((data) => {
       this.cartPro = data
       this.total = 0
       this.cartPro.forEach((element: any) => {
         this.total += Number(element.totalEachitem)
       });
       console.log(this.total)
-    })
+    }))
 
   }
   removePro(id: number) {
@@ -39,9 +39,7 @@ export class CartComponent implements OnInit {
     }
   }
   removeAll() {
-    if (confirm('Are you really sure?')) {
-
-    }
+    location.reload()
 
   }
 

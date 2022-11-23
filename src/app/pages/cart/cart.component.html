@@ -76,14 +76,14 @@
         </div>
     </div>
     <!-- list_cart_768 -->
-    <div class="list_cart_768 container_custom mt-5" *ngFor="let item of cartPro">
+    <div class="list_cart_768 container_custom mt-5" *ngFor="let item of cartPro, let i = index">
         <div class="list_cart">
             <div class="row d-flex align-items-center item_title">
                 <div class="col-sm-6 col-4">
                     <h5>ID</h5>
                 </div>
                 <div class="col-sm-6 col-8 text-center">
-                    <span>{{item.id}}</span>
+                    <span>{{i + 1}}</span>
                 </div>
             </div>
             <div class="row mt-4 d-flex align-items-center item_title">
@@ -134,7 +134,7 @@
 
     <div class="container updateCart mt-5 mb-5 container_custom">
         <div class="update">
-            <button (click)="removeAll()">REMOVE ALL</button>
+            <button (click)="removeAll()">UPDATE CART</button>
         </div>
         <div class="continue">
             <button routerLink="/shop">CONTINUE SHOPPING</button>

@@ -10,6 +10,7 @@ const url = 'http://localhost:3000'
 export class FormServiceService {
 
   constructor(private http: HttpClient) { }
+  
   createAcc(data: User): Observable<User> {
     return this.http.post<User>(`${url}/account`, data)
   }

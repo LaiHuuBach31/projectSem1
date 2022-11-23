@@ -756,9 +756,9 @@ header {
 }
 
 @media screen and (max-width:405px) {
-    .account span {
+    /* .account span {
         display: none;
-    }
+    } */
 
     .menu_content a {
         color: #000;
